@@ -1,0 +1,193 @@
+EESchema Schematic File Version 4
+LIBS:PowerControlModule-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 11
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Conn_01x01_Female BUCK_OUT_VCC?
+U 1 1 5D952D31
+P 4900 2950
+AR Path="/5D952D31" Ref="BUCK_OUT_VCC?"  Part="1" 
+AR Path="/5D94BB1B/5D952D31" Ref="BUCK_OUT_VCC1"  Part="1" 
+AR Path="/5D97A274/5D952D31" Ref="BUCK_OUT_VCC2"  Part="1" 
+AR Path="/5D98E0A5/5D952D31" Ref="BUCK_OUT_VCC3"  Part="1" 
+AR Path="/5D98E0AC/5D952D31" Ref="BUCK_OUT_VCC4"  Part="1" 
+AR Path="/5D992879/5D952D31" Ref="BUCK_OUT_VCC8"  Part="1" 
+AR Path="/5D992880/5D952D31" Ref="BUCK_OUT_VCC7"  Part="1" 
+AR Path="/5D99AFA5/5D952D31" Ref="BUCK_OUT_VCC5"  Part="1" 
+AR Path="/5D99AFAC/5D952D31" Ref="BUCK_OUT_VCC6"  Part="1" 
+F 0 "BUCK_OUT_VCC1" V 4838 2998 50  0000 L CNN
+F 1 "Conn_01x01_Female" V 4747 2998 50  0000 L CNN
+F 2 "" H 4900 2950 50  0001 C CNN
+F 3 "~" H 4900 2950 50  0001 C CNN
+	1    4900 2950
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	4900 3150 4900 3400
+$Comp
+L Connector:Conn_01x01_Female BUCK_OUT_GND?
+U 1 1 5D952D40
+P 4900 6000
+AR Path="/5D952D40" Ref="BUCK_OUT_GND?"  Part="1" 
+AR Path="/5D94BB1B/5D952D40" Ref="BUCK_OUT_GND1"  Part="1" 
+AR Path="/5D97A274/5D952D40" Ref="BUCK_OUT_GND2"  Part="1" 
+AR Path="/5D98E0A5/5D952D40" Ref="BUCK_OUT_GND3"  Part="1" 
+AR Path="/5D98E0AC/5D952D40" Ref="BUCK_OUT_GND4"  Part="1" 
+AR Path="/5D992879/5D952D40" Ref="BUCK_OUT_GND8"  Part="1" 
+AR Path="/5D992880/5D952D40" Ref="BUCK_OUT_GND7"  Part="1" 
+AR Path="/5D99AFA5/5D952D40" Ref="BUCK_OUT_GND5"  Part="1" 
+AR Path="/5D99AFAC/5D952D40" Ref="BUCK_OUT_GND6"  Part="1" 
+F 0 "BUCK_OUT_GND1" V 4746 6048 50  0000 L CNN
+F 1 "Conn_01x01_Female" V 4837 6048 50  0000 L CNN
+F 2 "" H 4900 6000 50  0001 C CNN
+F 3 "~" H 4900 6000 50  0001 C CNN
+	1    4900 6000
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female IN_VCC_?
+U 1 1 5D952D46
+P 4900 2100
+AR Path="/5D952D46" Ref="IN_VCC_?"  Part="1" 
+AR Path="/5D94BB1B/5D952D46" Ref="IN_VCC_1"  Part="1" 
+AR Path="/5D97A274/5D952D46" Ref="IN_VCC_2"  Part="1" 
+AR Path="/5D98E0A5/5D952D46" Ref="IN_VCC_3"  Part="1" 
+AR Path="/5D98E0AC/5D952D46" Ref="IN_VCC_4"  Part="1" 
+AR Path="/5D992879/5D952D46" Ref="IN_VCC_8"  Part="1" 
+AR Path="/5D992880/5D952D46" Ref="IN_VCC_7"  Part="1" 
+AR Path="/5D99AFA5/5D952D46" Ref="IN_VCC_5"  Part="1" 
+AR Path="/5D99AFAC/5D952D46" Ref="IN_VCC_6"  Part="1" 
+F 0 "IN_VCC_1" V 4750 1700 50  0000 L CNN
+F 1 "Conn_01x01_Female" V 4850 1300 50  0000 L CNN
+F 2 "" H 4900 2100 50  0001 C CNN
+F 3 "~" H 4900 2100 50  0001 C CNN
+	1    4900 2100
+	0    -1   1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female IN_GND_?
+U 1 1 5D952D4C
+P 4900 2200
+AR Path="/5D952D4C" Ref="IN_GND_?"  Part="1" 
+AR Path="/5D94BB1B/5D952D4C" Ref="IN_GND_1"  Part="1" 
+AR Path="/5D97A274/5D952D4C" Ref="IN_GND_2"  Part="1" 
+AR Path="/5D98E0A5/5D952D4C" Ref="IN_GND_3"  Part="1" 
+AR Path="/5D98E0AC/5D952D4C" Ref="IN_GND_4"  Part="1" 
+AR Path="/5D992879/5D952D4C" Ref="IN_GND_8"  Part="1" 
+AR Path="/5D992880/5D952D4C" Ref="IN_GND_7"  Part="1" 
+AR Path="/5D99AFA5/5D952D4C" Ref="IN_GND_5"  Part="1" 
+AR Path="/5D99AFAC/5D952D4C" Ref="IN_GND_6"  Part="1" 
+F 0 "IN_GND_1" V 4850 2600 50  0000 R CNN
+F 1 "Conn_01x01_Female" V 4750 3000 50  0000 R CNN
+F 2 "" H 4900 2200 50  0001 C CNN
+F 3 "~" H 4900 2200 50  0001 C CNN
+	1    4900 2200
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	4900 4200 4900 4000
+Wire Wire Line
+	4900 5250 4900 5000
+$Comp
+L LibraryLoader:64600001003 FUSE?
+U 1 1 5D952D5A
+P 4900 4200
+AR Path="/5D952D5A" Ref="FUSE?"  Part="1" 
+AR Path="/5D94BB1B/5D952D5A" Ref="FUSE1"  Part="1" 
+AR Path="/5D97A274/5D952D5A" Ref="FUSE2"  Part="1" 
+AR Path="/5D98E0A5/5D952D5A" Ref="FUSE3"  Part="1" 
+AR Path="/5D98E0AC/5D952D5A" Ref="FUSE4"  Part="1" 
+AR Path="/5D992879/5D952D5A" Ref="FUSE8"  Part="1" 
+AR Path="/5D992880/5D952D5A" Ref="FUSE7"  Part="1" 
+AR Path="/5D99AFA5/5D952D5A" Ref="FUSE5"  Part="1" 
+AR Path="/5D99AFAC/5D952D5A" Ref="FUSE6"  Part="1" 
+F 0 "FUSE1" H 5300 4465 50  0000 C CNN
+F 1 "64600001003" H 5300 4374 50  0000 C CNN
+F 2 "LibraryLoader:646-SERIESHOLDER" H 5550 4300 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/64600001003.pdf" H 5550 4200 50  0001 L CNN
+F 4 "Fuse Holder 5X20MM PC MNT" H 5550 4100 50  0001 L CNN "Description"
+F 5 "" H 5550 4000 50  0001 L CNN "Height"
+F 6 "576-64600001003" H 5550 3900 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=576-64600001003" H 5550 3800 50  0001 L CNN "Mouser Price/Stock"
+F 8 "LITTELFUSE" H 5550 3700 50  0001 L CNN "Manufacturer_Name"
+F 9 "64600001003" H 5550 3600 50  0001 L CNN "Manufacturer_Part_Number"
+	1    4900 4200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4900 5350 4900 5800
+$Comp
+L Connector_Generic:Conn_01x02 CONN?
+U 1 1 5D952D61
+P 5100 5250
+AR Path="/5D952D61" Ref="CONN?"  Part="1" 
+AR Path="/5D94BB1B/5D952D61" Ref="CONN1"  Part="1" 
+AR Path="/5D97A274/5D952D61" Ref="CONN2"  Part="1" 
+AR Path="/5D98E0A5/5D952D61" Ref="CONN3"  Part="1" 
+AR Path="/5D98E0AC/5D952D61" Ref="CONN4"  Part="1" 
+AR Path="/5D992879/5D952D61" Ref="CONN8"  Part="1" 
+AR Path="/5D992880/5D952D61" Ref="CONN7"  Part="1" 
+AR Path="/5D99AFA5/5D952D61" Ref="CONN5"  Part="1" 
+AR Path="/5D99AFAC/5D952D61" Ref="CONN6"  Part="1" 
+F 0 "CONN1" H 5180 5242 50  0000 L CNN
+F 1 "Conn_01x02" H 5180 5151 50  0000 L CNN
+F 2 "" H 5100 5250 50  0001 C CNN
+F 3 "~" H 5100 5250 50  0001 C CNN
+	1    5100 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L LibraryLoader:IPP120P04P4L03AKSA1 PMOS?
+U 1 1 5D952D73
+P 4600 3800
+AR Path="/5D952D73" Ref="PMOS?"  Part="1" 
+AR Path="/5D94BB1B/5D952D73" Ref="PMOS1"  Part="1" 
+AR Path="/5D97A274/5D952D73" Ref="PMOS2"  Part="1" 
+AR Path="/5D98E0A5/5D952D73" Ref="PMOS3"  Part="1" 
+AR Path="/5D98E0AC/5D952D73" Ref="PMOS4"  Part="1" 
+AR Path="/5D992879/5D952D73" Ref="PMOS8"  Part="1" 
+AR Path="/5D992880/5D952D73" Ref="PMOS7"  Part="1" 
+AR Path="/5D99AFA5/5D952D73" Ref="PMOS5"  Part="1" 
+AR Path="/5D99AFAC/5D952D73" Ref="PMOS6"  Part="1" 
+F 0 "PMOS1" H 5030 3946 50  0000 L CNN
+F 1 "IPP120P04P4L03AKSA1" H 5030 3855 50  0000 L CNN
+F 2 "LibraryLoader:TO254P440X1000X2110-3P" H 5050 3750 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/IPP120P04P4L03AKSA1.pdf" H 5050 3650 50  0001 L CNN
+F 4 "MOSFET P-Ch 40V 120A OptiMOS-P2 TO-220" H 5050 3550 50  0001 L CNN "Description"
+F 5 "4.4" H 5050 3450 50  0001 L CNN "Height"
+F 6 "726-IPP120P04P4L03AK" H 5050 3350 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=726-IPP120P04P4L03AK" H 5050 3250 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Infineon" H 5050 3150 50  0001 L CNN "Manufacturer_Name"
+F 9 "IPP120P04P4L03AKSA1" H 5050 3050 50  0001 L CNN "Manufacturer_Part_Number"
+	1    4600 3800
+	1    0    0    -1  
+$EndComp
+Text HLabel 4300 3800 0    50   Input ~ 0
+ENB
+Wire Wire Line
+	4300 3800 4600 3800
+Text HLabel 4500 2700 0    50   Input ~ 0
+GND_in
+Text HLabel 4500 1500 0    50   Input ~ 0
+VCC_in
+Wire Wire Line
+	4900 2700 4500 2700
+Wire Wire Line
+	4900 2400 4900 2700
+Wire Wire Line
+	4500 1500 4900 1500
+Wire Wire Line
+	4900 1500 4900 1900
+$EndSCHEMATC
