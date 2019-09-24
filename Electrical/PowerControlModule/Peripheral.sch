@@ -47,26 +47,6 @@ F 9 "64600001003" H 6900 2750 50  0001 L CNN "Manufacturer_Part_Number"
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x02 CONN?
-U 1 1 5D952D61
-P 6450 4400
-AR Path="/5D952D61" Ref="CONN?"  Part="1" 
-AR Path="/5D94BB1B/5D952D61" Ref="CONN1"  Part="1" 
-AR Path="/5D97A274/5D952D61" Ref="CONN2"  Part="1" 
-AR Path="/5D98E0A5/5D952D61" Ref="CONN3"  Part="1" 
-AR Path="/5D98E0AC/5D952D61" Ref="CONN4"  Part="1" 
-AR Path="/5D992879/5D952D61" Ref="CONN8"  Part="1" 
-AR Path="/5D992880/5D952D61" Ref="CONN7"  Part="1" 
-AR Path="/5D99AFA5/5D952D61" Ref="CONN5"  Part="1" 
-AR Path="/5D99AFAC/5D952D61" Ref="CONN6"  Part="1" 
-F 0 "CONN1" H 6530 4392 50  0000 L CNN
-F 1 "Conn_01x02" H 6530 4301 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6450 4400 50  0001 C CNN
-F 3 "~" H 6450 4400 50  0001 C CNN
-	1    6450 4400
-	1    0    0    -1  
-$EndComp
-$Comp
 L LibraryLoader:IPP120P04P4L03AKSA1 PMOS?
 U 1 1 5D952D73
 P 5950 2950
@@ -135,4 +115,23 @@ Wire Wire Line
 	5250 2850 5250 2300
 Wire Wire Line
 	5250 2300 6250 2300
+$Comp
+L Connector:Screw_Terminal_01x02 J9
+U 1 1 5D8A1568
+P 6450 4400
+AR Path="/5D94BB1B/5D8A1568" Ref="J9"  Part="1" 
+AR Path="/5D97A274/5D8A1568" Ref="J10"  Part="1" 
+AR Path="/5D98E0A5/5D8A1568" Ref="J11"  Part="1" 
+AR Path="/5D98E0AC/5D8A1568" Ref="J12"  Part="1" 
+AR Path="/5D99AFA5/5D8A1568" Ref="J13"  Part="1" 
+AR Path="/5D99AFAC/5D8A1568" Ref="J14"  Part="1" 
+AR Path="/5D992880/5D8A1568" Ref="J15"  Part="1" 
+AR Path="/5D992879/5D8A1568" Ref="J16"  Part="1" 
+F 0 "J9" H 6530 4392 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 6530 4301 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-2-5.08_1x02_P5.08mm_Horizontal" H 6450 4400 50  0001 C CNN
+F 3 "~" H 6450 4400 50  0001 C CNN
+	1    6450 4400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

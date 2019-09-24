@@ -420,4 +420,89 @@ F 3 "" H 10100 5550 50  0001 C CNN
 	1    10100 5550
 	-1   0    0    -1  
 $EndComp
+$Comp
+L power:GND #PWR022
+U 1 1 5D8A4822
+P 3200 5050
+F 0 "#PWR022" H 3200 4800 50  0001 C CNN
+F 1 "GND" H 3205 4877 50  0000 C CNN
+F 2 "" H 3200 5050 50  0001 C CNN
+F 3 "" H 3200 5050 50  0001 C CNN
+	1    3200 5050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR021
+U 1 1 5D8A4828
+P 3200 4150
+F 0 "#PWR021" H 3200 4000 50  0001 C CNN
+F 1 "+12V" H 3215 4323 50  0000 C CNN
+F 2 "" H 3200 4150 50  0001 C CNN
+F 3 "" H 3200 4150 50  0001 C CNN
+	1    3200 4150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 4550 3350 4550
+Wire Wire Line
+	3200 4150 3200 4550
+Wire Wire Line
+	3200 4750 3350 4750
+Wire Wire Line
+	3200 4750 3200 5050
+$Comp
+L Connector_Generic:Conn_01x03 J17
+U 1 1 5D8A562C
+P 3550 4650
+F 0 "J17" H 3630 4692 50  0000 L CNN
+F 1 "Conn_01x03" H 3630 4601 50  0000 L CNN
+F 2 "Connector_Wire:SolderWirePad_1x03_P7.62mm_Drill2.5mm" H 3550 4650 50  0001 C CNN
+F 3 "~" H 3550 4650 50  0001 C CNN
+	1    3550 4650
+	1    0    0    -1  
+$EndComp
+Text Label 2850 4650 0    50   ~ 0
+ENABLE
+Wire Wire Line
+	3350 4650 2850 4650
+Text Label 5700 4450 0    50   ~ 0
+ENABLE
+Wire Wire Line
+	5700 4450 6250 4450
+Text Label 5700 2850 0    50   ~ 0
+ENABLE
+Wire Wire Line
+	5700 2850 6250 2850
+Text Label 5700 6050 0    50   ~ 0
+ENABLE
+Wire Wire Line
+	5700 6050 6250 6050
+Text Label 5700 7650 0    50   ~ 0
+ENABLE
+Wire Wire Line
+	5700 7650 6250 7650
+Text Label 7700 7650 0    50   ~ 0
+ENABLE
+Wire Wire Line
+	7700 7650 8250 7650
+Text Label 7700 6050 0    50   ~ 0
+ENABLE
+Wire Wire Line
+	7700 6050 8250 6050
+Text Label 7700 4450 0    50   ~ 0
+ENABLE
+Wire Wire Line
+	7700 4450 8250 4450
+Text Label 7700 2850 0    50   ~ 0
+ENABLE
+Wire Wire Line
+	7700 2850 8250 2850
+Text Label 9700 4150 0    50   ~ 0
+ENABLE
+Wire Wire Line
+	9700 4150 10250 4150
+Text Label 9700 6150 0    50   ~ 0
+ENABLE
+Wire Wire Line
+	9700 6150 10250 6150
 $EndSCHEMATC
