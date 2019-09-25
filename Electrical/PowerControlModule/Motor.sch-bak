@@ -192,8 +192,6 @@ ENB
 Text HLabel 5150 6050 0    50   Input ~ 0
 GND_in
 Wire Wire Line
-	5200 6050 5300 6050
-Wire Wire Line
 	5300 6050 5300 5650
 Connection ~ 5300 5650
 Wire Wire Line
@@ -208,4 +206,6 @@ Wire Wire Line
 	4750 5650 4750 5200
 Wire Wire Line
 	4750 5650 5300 5650
+Wire Wire Line
+	5150 6050 5300 6050
 $EndSCHEMATC
