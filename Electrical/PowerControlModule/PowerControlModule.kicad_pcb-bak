@@ -1167,7 +1167,7 @@
     (descr IPP120P04P4L03AKSA1)
     (tags "MOSFET (P-Channel)")
     (path /5D9D6498/5D9CD656)
-    (fp_text reference PMOS10 (at 0 0) (layer F.SilkS)
+    (fp_text reference PMOS10 (at 3 3) (layer F.SilkS)
       (effects (font (size 1.27 1.27) (thickness 0.254)))
     )
     (fp_text value IPP120P04P4L03AKSA1 (at 0 0) (layer F.SilkS) hide
@@ -1206,7 +1206,7 @@
     (descr IPP120P04P4L03AKSA1)
     (tags "MOSFET (P-Channel)")
     (path /5D9C920E/5D9CD656)
-    (fp_text reference PMOS9 (at 0 0) (layer F.SilkS)
+    (fp_text reference PMOS9 (at 0 -4) (layer F.SilkS)
       (effects (font (size 1.27 1.27) (thickness 0.254)))
     )
     (fp_text value IPP120P04P4L03AKSA1 (at 0 0) (layer F.SilkS) hide
@@ -1245,7 +1245,7 @@
     (descr IPP120P04P4L03AKSA1)
     (tags "MOSFET (P-Channel)")
     (path /5D992879/5D952D73)
-    (fp_text reference PMOS8 (at 0 0) (layer F.SilkS)
+    (fp_text reference PMOS8 (at 1 -4) (layer F.SilkS)
       (effects (font (size 1.27 1.27) (thickness 0.254)))
     )
     (fp_text value IPP120P04P4L03AKSA1 (at 0 0) (layer F.SilkS) hide
@@ -1284,7 +1284,7 @@
     (descr IPP120P04P4L03AKSA1)
     (tags "MOSFET (P-Channel)")
     (path /5D992880/5D952D73)
-    (fp_text reference PMOS7 (at 0 0) (layer F.SilkS)
+    (fp_text reference PMOS7 (at 1 -4) (layer F.SilkS)
       (effects (font (size 1.27 1.27) (thickness 0.254)))
     )
     (fp_text value IPP120P04P4L03AKSA1 (at 0 0) (layer F.SilkS) hide
@@ -1323,7 +1323,7 @@
     (descr IPP120P04P4L03AKSA1)
     (tags "MOSFET (P-Channel)")
     (path /5D99AFAC/5D952D73)
-    (fp_text reference PMOS6 (at 0 0) (layer F.SilkS)
+    (fp_text reference PMOS6 (at 1 -4) (layer F.SilkS)
       (effects (font (size 1.27 1.27) (thickness 0.254)))
     )
     (fp_text value IPP120P04P4L03AKSA1 (at 0 0) (layer F.SilkS) hide
@@ -1362,7 +1362,7 @@
     (descr IPP120P04P4L03AKSA1)
     (tags "MOSFET (P-Channel)")
     (path /5D99AFA5/5D952D73)
-    (fp_text reference PMOS5 (at 0 0) (layer F.SilkS)
+    (fp_text reference PMOS5 (at 1 -4) (layer F.SilkS)
       (effects (font (size 1.27 1.27) (thickness 0.254)))
     )
     (fp_text value IPP120P04P4L03AKSA1 (at 0 0) (layer F.SilkS) hide
@@ -1401,7 +1401,7 @@
     (descr IPP120P04P4L03AKSA1)
     (tags "MOSFET (P-Channel)")
     (path /5D98E0AC/5D952D73)
-    (fp_text reference PMOS4 (at 0 0) (layer F.SilkS)
+    (fp_text reference PMOS4 (at 1 -4) (layer F.SilkS)
       (effects (font (size 1.27 1.27) (thickness 0.254)))
     )
     (fp_text value IPP120P04P4L03AKSA1 (at 0 0) (layer F.SilkS) hide
@@ -1440,7 +1440,7 @@
     (descr IPP120P04P4L03AKSA1)
     (tags "MOSFET (P-Channel)")
     (path /5D98E0A5/5D952D73)
-    (fp_text reference PMOS3 (at 0 0) (layer F.SilkS)
+    (fp_text reference PMOS3 (at 1 -4) (layer F.SilkS)
       (effects (font (size 1.27 1.27) (thickness 0.254)))
     )
     (fp_text value IPP120P04P4L03AKSA1 (at 0 0) (layer F.SilkS) hide
@@ -1479,7 +1479,7 @@
     (descr IPP120P04P4L03AKSA1)
     (tags "MOSFET (P-Channel)")
     (path /5D97A274/5D952D73)
-    (fp_text reference PMOS2 (at 0 0) (layer F.SilkS)
+    (fp_text reference PMOS2 (at 1 -4) (layer F.SilkS)
       (effects (font (size 1.27 1.27) (thickness 0.254)))
     )
     (fp_text value IPP120P04P4L03AKSA1 (at 0 0) (layer F.SilkS) hide
@@ -1518,7 +1518,7 @@
     (descr IPP120P04P4L03AKSA1)
     (tags "MOSFET (P-Channel)")
     (path /5D94BB1B/5D952D73)
-    (fp_text reference PMOS1 (at 0 0) (layer F.SilkS)
+    (fp_text reference PMOS1 (at 1 -4) (layer F.SilkS)
       (effects (font (size 1.27 1.27) (thickness 0.254)))
     )
     (fp_text value IPP120P04P4L03AKSA1 (at 0 0) (layer F.SilkS) hide
@@ -1789,7 +1789,7 @@
     (descr 646-SeriesHolder)
     (tags Connector)
     (path /5D992879/5D952D5A)
-    (fp_text reference FUSE8 (at -0.565 -1.595) (layer F.SilkS)
+    (fp_text reference FUSE8 (at -0.565 -5) (layer F.SilkS)
       (effects (font (size 1.27 1.27) (thickness 0.254)))
     )
     (fp_text value 64600001003 (at -0.565 -1.595) (layer F.SilkS) hide
@@ -1817,7 +1817,7 @@
     (descr 646-SeriesHolder)
     (tags Connector)
     (path /5D992880/5D952D5A)
-    (fp_text reference FUSE7 (at -0.565 -1.595) (layer F.SilkS)
+    (fp_text reference FUSE7 (at 0 -5) (layer F.SilkS)
       (effects (font (size 1.27 1.27) (thickness 0.254)))
     )
     (fp_text value 64600001003 (at -0.565 -1.595) (layer F.SilkS) hide
@@ -1845,7 +1845,7 @@
     (descr 646-SeriesHolder)
     (tags Connector)
     (path /5D99AFAC/5D952D5A)
-    (fp_text reference FUSE6 (at -0.565 -1.595) (layer F.SilkS)
+    (fp_text reference FUSE6 (at -0.565 -5) (layer F.SilkS)
       (effects (font (size 1.27 1.27) (thickness 0.254)))
     )
     (fp_text value 64600001003 (at -0.565 -1.595) (layer F.SilkS) hide
@@ -1873,7 +1873,7 @@
     (descr 646-SeriesHolder)
     (tags Connector)
     (path /5D99AFA5/5D952D5A)
-    (fp_text reference FUSE5 (at -0.565 -1.595) (layer F.SilkS)
+    (fp_text reference FUSE5 (at -0.565 -5) (layer F.SilkS)
       (effects (font (size 1.27 1.27) (thickness 0.254)))
     )
     (fp_text value 64600001003 (at -0.565 -1.595) (layer F.SilkS) hide
@@ -1901,7 +1901,7 @@
     (descr 646-SeriesHolder)
     (tags Connector)
     (path /5D98E0AC/5D952D5A)
-    (fp_text reference FUSE4 (at -0.565 -1.595) (layer F.SilkS)
+    (fp_text reference FUSE4 (at -0.565 -5) (layer F.SilkS)
       (effects (font (size 1.27 1.27) (thickness 0.254)))
     )
     (fp_text value 64600001003 (at -0.565 -1.595) (layer F.SilkS) hide
@@ -1929,7 +1929,7 @@
     (descr 646-SeriesHolder)
     (tags Connector)
     (path /5D98E0A5/5D952D5A)
-    (fp_text reference FUSE3 (at -0.565 -1.595) (layer F.SilkS)
+    (fp_text reference FUSE3 (at -1 -5) (layer F.SilkS)
       (effects (font (size 1.27 1.27) (thickness 0.254)))
     )
     (fp_text value 64600001003 (at -0.565 -1.595) (layer F.SilkS) hide
@@ -1957,7 +1957,7 @@
     (descr 646-SeriesHolder)
     (tags Connector)
     (path /5D97A274/5D952D5A)
-    (fp_text reference FUSE2 (at -0.565 -1.595) (layer F.SilkS)
+    (fp_text reference FUSE2 (at -0.565 -5) (layer F.SilkS)
       (effects (font (size 1.27 1.27) (thickness 0.254)))
     )
     (fp_text value 64600001003 (at -0.565 -1.595) (layer F.SilkS) hide
@@ -1985,7 +1985,7 @@
     (descr 646-SeriesHolder)
     (tags Connector)
     (path /5D94BB1B/5D952D5A)
-    (fp_text reference FUSE1 (at -0.565 -1.595) (layer F.SilkS)
+    (fp_text reference FUSE1 (at -0.565 -5) (layer F.SilkS)
       (effects (font (size 1.27 1.27) (thickness 0.254)))
     )
     (fp_text value 64600001003 (at -0.565 -1.595) (layer F.SilkS) hide

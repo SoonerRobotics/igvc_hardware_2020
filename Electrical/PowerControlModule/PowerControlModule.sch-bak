@@ -451,10 +451,10 @@ Wire Wire Line
 Wire Wire Line
 	3200 4750 3200 5050
 $Comp
-L Connector_Generic:Conn_01x03 J17
+L Connector_Generic:Conn_01x03 PowerConnection1
 U 1 1 5D8A562C
 P 3550 4650
-F 0 "J17" H 3630 4692 50  0000 L CNN
+F 0 "PowerConnection1" H 3630 4692 50  0000 L CNN
 F 1 "Conn_01x03" H 3630 4601 50  0000 L CNN
 F 2 "Connector_Wire:SolderWirePad_1x03_P7.62mm_Drill2.5mm" H 3550 4650 50  0001 C CNN
 F 3 "~" H 3550 4650 50  0001 C CNN
