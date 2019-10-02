@@ -169,4 +169,16 @@ Wire Wire Line
 Wire Wire Line
 	2850 1150 2850 1900
 Connection ~ 2850 1900
+$Comp
+L power:GND #PWR?
+U 1 1 5D95AD47
+P 2850 3900
+F 0 "#PWR?" H 2850 3650 50  0001 C CNN
+F 1 "GND" H 2855 3727 50  0000 C CNN
+F 2 "" H 2850 3900 50  0001 C CNN
+F 3 "" H 2850 3900 50  0001 C CNN
+	1    2850 3900
+	1    0    0    -1  
+$EndComp
+Connection ~ 2850 3900
 $EndSCHEMATC

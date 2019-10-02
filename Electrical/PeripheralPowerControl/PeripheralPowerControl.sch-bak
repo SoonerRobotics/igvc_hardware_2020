@@ -134,9 +134,7 @@ Wire Wire Line
 Wire Wire Line
 	3800 1700 3800 2650
 Wire Wire Line
-	2600 1900 2600 3900
-Wire Wire Line
-	2600 3900 5100 3900
+	2850 1900 2850 3900
 Wire Wire Line
 	3200 3050 3200 1800
 Wire Wire Line
@@ -144,21 +142,31 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_01x03 J3
 U 1 1 5D94F2BA
-P 4250 1800
-F 0 "J3" H 4330 1842 50  0000 L CNN
-F 1 "Conn_01x03" H 4330 1751 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Horizontal" H 4250 1800 50  0001 C CNN
-F 3 "~" H 4250 1800 50  0001 C CNN
-	1    4250 1800
-	1    0    0    -1  
+P 2400 1050
+F 0 "J3" H 2480 1092 50  0000 L CNN
+F 1 "Conn_01x03" H 2480 1001 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Horizontal" H 2400 1050 50  0001 C CNN
+F 3 "~" H 2400 1050 50  0001 C CNN
+	1    2400 1050
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	4050 1700 3800 1700
+	2600 950  3800 950 
+Wire Wire Line
+	3800 950  3800 1700
 Connection ~ 3800 1700
 Wire Wire Line
-	4050 1800 3200 1800
+	3200 1800 3200 1050
+Wire Wire Line
+	3200 1050 2600 1050
 Connection ~ 3200 1800
 Wire Wire Line
-	4050 1900 2600 1900
-Connection ~ 2600 1900
+	2850 3900 5100 3900
+Wire Wire Line
+	2850 1900 2600 1900
+Wire Wire Line
+	2600 1150 2850 1150
+Wire Wire Line
+	2850 1150 2850 1900
+Connection ~ 2850 1900
 $EndSCHEMATC
