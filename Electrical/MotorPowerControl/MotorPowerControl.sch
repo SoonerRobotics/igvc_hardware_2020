@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:MotorPowerControl-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -31,10 +32,8 @@ F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=726-IPP120P04P4L03AK" H 5
 F 8 "Infineon" H 5500 1700 50  0001 L CNN "Manufacturer_Name"
 F 9 "IPP120P04P4L03AKSA1" H 5500 1600 50  0001 L CNN "Manufacturer_Part_Number"
 	1    5050 2350
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
-Wire Wire Line
-	5350 3600 5350 2550
 $Comp
 L LibraryLoader:178.6164.0002 J6
 U 1 1 5D9583D7
@@ -116,8 +115,6 @@ F 9 "178.6164.0002" H 4800 3300 50  0001 L CNN "Manufacturer_Part_Number"
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	5350 3600 4800 3600
-Wire Wire Line
 	4150 3600 4150 3900
 Wire Wire Line
 	4800 3900 4800 3600
@@ -126,9 +123,6 @@ Wire Wire Line
 	4800 3600 4150 3600
 Wire Wire Line
 	5800 3900 5800 3600
-Wire Wire Line
-	5800 3600 5350 3600
-Connection ~ 5350 3600
 Wire Wire Line
 	6450 3900 6450 3600
 Wire Wire Line
@@ -215,25 +209,10 @@ F 3 "~" H 3450 1450 50  0001 C CNN
 	1    3450 1450
 	-1   0    0    1   
 $EndComp
-$Comp
-L Connector_Generic:Conn_01x03 J3
-U 1 1 5D956F16
-P 4500 900
-F 0 "J3" H 4580 942 50  0000 L CNN
-F 1 "Conn_01x03" H 4580 851 50  0000 L CNN
-F 2 "Connector_Wire:SolderWirePad_1x03_P7.62mm_Drill2.5mm" H 4500 900 50  0001 C CNN
-F 3 "~" H 4500 900 50  0001 C CNN
-	1    4500 900 
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	3650 1350 4200 1350
+	5350 1350 5350 1750
 Wire Wire Line
-	5350 1350 5350 1950
-Wire Wire Line
-	3650 1450 4050 1450
-Wire Wire Line
-	5050 1450 5050 2350
+	4450 1450 4450 1750
 Wire Wire Line
 	3650 1600 3650 1550
 $Comp
@@ -247,50 +226,99 @@ F 3 "" H 3650 1600 50  0001 C CNN
 	1    3650 1600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4300 1000 4200 1000
-Wire Wire Line
-	4200 1000 4200 1350
-Connection ~ 4200 1350
-Wire Wire Line
-	4200 1350 5350 1350
-Wire Wire Line
-	4300 900  4050 900 
-Wire Wire Line
-	4050 900  4050 1450
-Connection ~ 4050 1450
-Wire Wire Line
-	4050 1450 5050 1450
-$Comp
-L power:GND #PWR02
-U 1 1 5D95E094
-P 3900 900
-F 0 "#PWR02" H 3900 650 50  0001 C CNN
-F 1 "GND" H 3905 727 50  0000 C CNN
-F 2 "" H 3900 900 50  0001 C CNN
-F 3 "" H 3900 900 50  0001 C CNN
-	1    3900 900 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4300 800  3900 800 
-Wire Wire Line
-	3900 800  3900 900 
 $Comp
 L LibraryLoader:HSE-B20250-040H H1
 U 1 1 5D9636D1
-P 7100 1850
-F 0 "H1" H 7500 2115 50  0000 C CNN
-F 1 "HSE-B20250-040H" H 7500 2024 50  0000 C CNN
-F 2 "LibraryLoader:HSEB20250040H" H 7750 1950 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/HSE-B20250-040H.pdf" H 7750 1850 50  0001 L CNN
-F 4 "Heat Sinks 25x35x12.5mm w/pin extrusion TO-220" H 7750 1750 50  0001 L CNN "Description"
-F 5 "25" H 7750 1650 50  0001 L CNN "Height"
-F 6 "490-HSE-B20250-040H" H 7750 1550 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=490-HSE-B20250-040H" H 7750 1450 50  0001 L CNN "Mouser Price/Stock"
-F 8 "CUI" H 7750 1350 50  0001 L CNN "Manufacturer_Name"
-F 9 "HSE-B20250-040H" H 7750 1250 50  0001 L CNN "Manufacturer_Part_Number"
-	1    7100 1850
+P 8850 2450
+F 0 "H1" H 9250 2715 50  0000 C CNN
+F 1 "HSE-B20250-040H" H 9250 2624 50  0000 C CNN
+F 2 "LibraryLoader:HSEB20250040H" H 9500 2550 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/HSE-B20250-040H.pdf" H 9500 2450 50  0001 L CNN
+F 4 "Heat Sinks 25x35x12.5mm w/pin extrusion TO-220" H 9500 2350 50  0001 L CNN "Description"
+F 5 "25" H 9500 2250 50  0001 L CNN "Height"
+F 6 "490-HSE-B20250-040H" H 9500 2150 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=490-HSE-B20250-040H" H 9500 2050 50  0001 L CNN "Mouser Price/Stock"
+F 8 "CUI" H 9500 1950 50  0001 L CNN "Manufacturer_Name"
+F 9 "HSE-B20250-040H" H 9500 1850 50  0001 L CNN "Manufacturer_Part_Number"
+	1    8850 2450
 	1    0    0    -1  
 $EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5D9BF700
+P 9050 1250
+F 0 "H3" H 9150 1296 50  0000 L CNN
+F 1 "MountingHole" H 9150 1205 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 9050 1250 50  0001 C CNN
+F 3 "~" H 9050 1250 50  0001 C CNN
+	1    9050 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5D9C0051
+P 9050 950
+F 0 "H2" H 9150 996 50  0000 L CNN
+F 1 "MountingHole" H 9150 905 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 9050 950 50  0001 C CNN
+F 3 "~" H 9050 950 50  0001 C CNN
+	1    9050 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5D9C0B50
+P 9050 1550
+F 0 "H4" H 9150 1596 50  0000 L CNN
+F 1 "MountingHole" H 9150 1505 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 9050 1550 50  0001 C CNN
+F 3 "~" H 9050 1550 50  0001 C CNN
+	1    9050 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H5
+U 1 1 5D9C15C6
+P 9050 1850
+F 0 "H5" H 9150 1896 50  0000 L CNN
+F 1 "MountingHole" H 9150 1805 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 9050 1850 50  0001 C CNN
+F 3 "~" H 9050 1850 50  0001 C CNN
+	1    9050 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 1350 5350 1350
+Wire Wire Line
+	3650 1450 4450 1450
+$Comp
+L Device:R R1
+U 1 1 5D9CA0C3
+P 4850 1750
+F 0 "R1" V 4643 1750 50  0000 C CNN
+F 1 "R" V 4734 1750 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 4780 1750 50  0001 C CNN
+F 3 "~" H 4850 1750 50  0001 C CNN
+	1    4850 1750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4700 1750 4450 1750
+Connection ~ 4450 1750
+Wire Wire Line
+	4450 1750 4450 2350
+Wire Wire Line
+	5000 1750 5350 1750
+Wire Wire Line
+	5050 2350 4450 2350
+Wire Wire Line
+	4800 3600 5350 3600
+Wire Wire Line
+	5350 2150 5350 1750
+Connection ~ 5350 1750
+Wire Wire Line
+	5350 2750 5350 3600
+Connection ~ 5350 3600
+Wire Wire Line
+	5350 3600 5800 3600
 $EndSCHEMATC

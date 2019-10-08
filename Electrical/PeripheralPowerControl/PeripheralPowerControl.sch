@@ -64,7 +64,7 @@ F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=726-IPP120P04P4L03AK" H 3
 F 8 "Infineon" H 3950 2400 50  0001 L CNN "Manufacturer_Name"
 F 9 "IPP120P04P4L03AKSA1" H 3950 2300 50  0001 L CNN "Manufacturer_Part_Number"
 	1    3500 3050
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	3200 3050 3500 3050
@@ -116,15 +116,13 @@ Wire Wire Line
 	6100 3700 5800 3700
 Wire Wire Line
 	5100 3700 4600 3700
-Wire Wire Line
-	3800 3250 3800 3700
 $Comp
 L Connector_Generic:Conn_01x03 J1
 U 1 1 5D94D2BC
 P 2400 1800
 F 0 "J1" H 2318 1475 50  0000 C CNN
 F 1 "Conn_01x03" H 2318 1566 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal" H 2400 1800 50  0001 C CNN
+F 2 "Connector_JST:JST_EH_B3B-EH-A_1x03_P2.50mm_Vertical" H 2400 1800 50  0001 C CNN
 F 3 "~" H 2400 1800 50  0001 C CNN
 	1    2400 1800
 	-1   0    0    1   
@@ -132,48 +130,20 @@ $EndComp
 Wire Wire Line
 	2600 1700 3800 1700
 Wire Wire Line
-	3800 1700 3800 2650
-Wire Wire Line
 	2850 1900 2850 3900
 Wire Wire Line
-	3200 3050 3200 1800
+	3200 3050 3200 2000
 Wire Wire Line
 	3200 1800 2600 1800
-$Comp
-L Connector_Generic:Conn_01x03 J3
-U 1 1 5D94F2BA
-P 2400 1050
-F 0 "J3" H 2480 1092 50  0000 L CNN
-F 1 "Conn_01x03" H 2480 1001 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Horizontal" H 2400 1050 50  0001 C CNN
-F 3 "~" H 2400 1050 50  0001 C CNN
-	1    2400 1050
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	2600 950  3800 950 
-Wire Wire Line
-	3800 950  3800 1700
-Connection ~ 3800 1700
-Wire Wire Line
-	3200 1800 3200 1050
-Wire Wire Line
-	3200 1050 2600 1050
-Connection ~ 3200 1800
 Wire Wire Line
 	2850 3900 5100 3900
 Wire Wire Line
 	2850 1900 2600 1900
-Wire Wire Line
-	2600 1150 2850 1150
-Wire Wire Line
-	2850 1150 2850 1900
-Connection ~ 2850 1900
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0101
 U 1 1 5D95AD47
 P 2850 3900
-F 0 "#PWR?" H 2850 3650 50  0001 C CNN
+F 0 "#PWR0101" H 2850 3650 50  0001 C CNN
 F 1 "GND" H 2855 3727 50  0000 C CNN
 F 2 "" H 2850 3900 50  0001 C CNN
 F 3 "" H 2850 3900 50  0001 C CNN
@@ -181,4 +151,73 @@ F 3 "" H 2850 3900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 2850 3900
+$Comp
+L Device:R R1
+U 1 1 5D9D0066
+P 3500 2000
+F 0 "R1" V 3707 2000 50  0000 C CNN
+F 1 "R" V 3616 2000 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 3430 2000 50  0001 C CNN
+F 3 "~" H 3500 2000 50  0001 C CNN
+	1    3500 2000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3800 1700 3800 2000
+Wire Wire Line
+	3650 2000 3800 2000
+Wire Wire Line
+	3350 2000 3200 2000
+Connection ~ 3200 2000
+Wire Wire Line
+	3200 2000 3200 1800
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5D9D353F
+P 8150 1100
+F 0 "H1" H 8250 1146 50  0000 L CNN
+F 1 "MountingHole" H 8250 1055 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 8150 1100 50  0001 C CNN
+F 3 "~" H 8150 1100 50  0001 C CNN
+	1    8150 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5D9D3D3A
+P 8150 1400
+F 0 "H2" H 8250 1446 50  0000 L CNN
+F 1 "MountingHole" H 8250 1355 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 8150 1400 50  0001 C CNN
+F 3 "~" H 8150 1400 50  0001 C CNN
+	1    8150 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5D9D44B2
+P 8150 1700
+F 0 "H3" H 8250 1746 50  0000 L CNN
+F 1 "MountingHole" H 8250 1655 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 8150 1700 50  0001 C CNN
+F 3 "~" H 8150 1700 50  0001 C CNN
+	1    8150 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5D9D4DB1
+P 8150 2000
+F 0 "H4" H 8250 2046 50  0000 L CNN
+F 1 "MountingHole" H 8250 1955 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 8150 2000 50  0001 C CNN
+F 3 "~" H 8150 2000 50  0001 C CNN
+	1    8150 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 2850 3800 2000
+Connection ~ 3800 2000
+Wire Wire Line
+	3800 3450 3800 3700
 $EndSCHEMATC

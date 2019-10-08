@@ -1,4 +1,4 @@
-16310443754002399
+16312013820843775
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -49643,6 +49643,13 @@ BuckConverter
 0
 4
 4
+LibraryLoader
+HSEB20250040H
+HSE-B20250-040H-2
+Hardware
+0
+2
+2
 LibraryLoader
 NE555DR
 D (R-PDSO-G8)
