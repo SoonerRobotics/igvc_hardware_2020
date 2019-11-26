@@ -1,0 +1,188 @@
+EESchema Schematic File Version 4
+LIBS:estop-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	4130 4460 4130 4455
+Wire Wire Line
+	3475 5705 3475 5710
+$Comp
+L power:VCC #PWR0103
+U 1 1 5DDEBC82
+P 2895 6610
+F 0 "#PWR0103" H 2895 6460 50  0001 C CNN
+F 1 "VCC" H 2913 6783 50  0000 C CNN
+F 2 "" H 2895 6610 50  0001 C CNN
+F 3 "" H 2895 6610 50  0001 C CNN
+	1    2895 6610
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2895 6610 2895 6605
+Text GLabel 2540 5905 0    50   Input ~ 0
+Input
+Wire Wire Line
+	3475 6305 3475 6345
+Wire Wire Line
+	3475 6345 3745 6345
+Connection ~ 3475 6345
+Wire Wire Line
+	3475 6345 3475 6390
+$Comp
+L Adafruit_Feather_M0_RFMxx-eagle-import:GND #GND0105
+U 1 1 5DDEBC9A
+P 3475 7190
+F 0 "#GND0105" H 3475 7190 50  0001 C CNN
+F 1 "GND" H 3475 7069 59  0000 C CNN
+F 2 "" H 3475 7190 50  0001 C CNN
+F 3 "" H 3475 7190 50  0001 C CNN
+	1    3475 7190
+	1    0    0    -1  
+$EndComp
+Text GLabel 3745 6345 2    50   Input ~ 0
+Output
+$Comp
+L Adafruit_Feather_M0_RFMxx-eagle-import:GND #GND0106
+U 1 1 5DDEBCA1
+P 1605 5360
+F 0 "#GND0106" H 1605 5360 50  0001 C CNN
+F 1 "GND" V 1605 5291 59  0000 R CNN
+F 2 "" H 1605 5360 50  0001 C CNN
+F 3 "" H 1605 5360 50  0001 C CNN
+	1    1605 5360
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1705 5360 1705 5645
+Connection ~ 1705 5360
+Connection ~ 3475 5705
+Text GLabel 3475 5255 0    50   Input ~ 0
+Enable
+Connection ~ 3475 5645
+Wire Wire Line
+	3475 5645 3475 5255
+Wire Wire Line
+	1700 5195 1705 5195
+Wire Wire Line
+	1700 5190 1700 5195
+Wire Wire Line
+	1710 5645 1705 5645
+Wire Wire Line
+	2515 5645 3475 5645
+Connection ~ 2515 5645
+Wire Wire Line
+	2515 5190 2515 5645
+Wire Wire Line
+	2400 5190 2515 5190
+Wire Wire Line
+	3475 5645 3475 5705
+Wire Wire Line
+	2210 5645 2515 5645
+$Comp
+L USBhUB:GCQ1555C1H7R5BB01D 2.2uf1
+U 1 1 5DDEBCCB
+P 1710 5645
+F 0 "2.2uf1" H 1960 5910 50  0000 C CNN
+F 1 "GCQ1555C1H7R5BB01D" H 1960 5819 50  0000 C CNN
+F 2 "CAPC1005X55N" H 2060 5695 50  0001 L CNN
+F 3 "https://psearch.en.murata.com/capacitor/product/GCQ1555C1H7R5BB01%23.html" H 2060 5595 50  0001 L CNN
+F 4 "Capacitor GCQ15_0.05 L=1.0mm W=0.5mm T=0.5mm" H 2060 5495 50  0001 L CNN "Description"
+F 5 "0.55" H 2060 5395 50  0001 L CNN "Height"
+F 6 "" H 2060 5295 50  0001 L CNN "Mouser Part Number"
+F 7 "" H 2060 5195 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Murata Electronics" H 2060 5095 50  0001 L CNN "Manufacturer_Name"
+F 9 "GCQ1555C1H7R5BB01D" H 2060 4995 50  0001 L CNN "Manufacturer_Part_Number"
+	1    1710 5645
+	1    0    0    -1  
+$EndComp
+$Comp
+L USBhUB:IRF530NPBF Q1
+U 1 1 5DDEBCD7
+P 3175 5905
+F 0 "Q1" H 3605 6051 50  0000 L CNN
+F 1 "IRF530NPBF" H 3605 5960 50  0000 L CNN
+F 2 "TO254P469X1042X1967-3P" H 3625 5855 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/IRF530NPBF.pdf" H 3625 5755 50  0001 L CNN
+F 4 "IRF530NPBF N-Channel MOSFET, 17 A, 100 V HEXFET, 3-Pin TO-220AB Infineon" H 3625 5655 50  0001 L CNN "Description"
+F 5 "4.69" H 3625 5555 50  0001 L CNN "Height"
+F 6 "942-IRF530NPBF" H 3625 5455 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=942-IRF530NPBF" H 3625 5355 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Infineon" H 3625 5255 50  0001 L CNN "Manufacturer_Name"
+F 9 "IRF530NPBF" H 3625 5155 50  0001 L CNN "Manufacturer_Part_Number"
+	1    3175 5905
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	1705 5190 1705 5360
+Wire Wire Line
+	2540 5905 2895 5905
+$Comp
+L USBhUB:ROX5SSJ1K8 10k
+U 1 1 5DDFD809
+P 1700 5190
+F 0 "10k" H 2050 5415 50  0000 C CNN
+F 1 "ROX5SSJ1K8" H 2050 5324 50  0000 C CNN
+F 2 "RESAD4350W80L1750D650" H 2250 5240 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/ROX5SSJ1K8.pdf" H 2250 5140 50  0001 L CNN
+F 4 "TE Connectivity 1.8k 5W Metal Oxide Resistor +/-5% +/-350ppm/C ROX5SSJ1K8" H 2250 5040 50  0001 L CNN "Description"
+F 5 "" H 2250 4940 50  0001 L CNN "Height"
+F 6 "279-ROX5SSJ1K8" H 2250 4840 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=279-ROX5SSJ1K8" H 2250 4740 50  0001 L CNN "Mouser Price/Stock"
+F 8 "TE Connectivity" H 2250 4640 50  0001 L CNN "Manufacturer_Name"
+F 9 "ROX5SSJ1K8" H 2250 4540 50  0001 L CNN "Manufacturer_Part_Number"
+	1    1700 5190
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 5190 1705 5190
+Connection ~ 1700 5190
+$Comp
+L USBhUB:ROX5SSJ1K8 10k
+U 1 1 5DDFFFB7
+P 2895 5905
+F 0 "10k" V 3199 5993 50  0000 L CNN
+F 1 "ROX5SSJ1K8" V 3290 5993 50  0000 L CNN
+F 2 "RESAD4350W80L1750D650" H 3445 5955 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/ROX5SSJ1K8.pdf" H 3445 5855 50  0001 L CNN
+F 4 "TE Connectivity 1.8k 5W Metal Oxide Resistor +/-5% +/-350ppm/C ROX5SSJ1K8" H 3445 5755 50  0001 L CNN "Description"
+F 5 "" H 3445 5655 50  0001 L CNN "Height"
+F 6 "279-ROX5SSJ1K8" H 3445 5555 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=279-ROX5SSJ1K8" H 3445 5455 50  0001 L CNN "Mouser Price/Stock"
+F 8 "TE Connectivity" H 3445 5355 50  0001 L CNN "Manufacturer_Name"
+F 9 "ROX5SSJ1K8" H 3445 5255 50  0001 L CNN "Manufacturer_Part_Number"
+	1    2895 5905
+	0    1    1    0   
+$EndComp
+Connection ~ 2895 5905
+Wire Wire Line
+	2895 5905 3175 5905
+$Comp
+L USBhUB:ROX5SSJ1K8 10k
+U 1 1 5DE01660
+P 3475 6390
+F 0 "10k" V 3779 6478 50  0000 L CNN
+F 1 "ROX5SSJ1K8" V 3870 6478 50  0000 L CNN
+F 2 "RESAD4350W80L1750D650" H 4025 6440 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/ROX5SSJ1K8.pdf" H 4025 6340 50  0001 L CNN
+F 4 "TE Connectivity 1.8k 5W Metal Oxide Resistor +/-5% +/-350ppm/C ROX5SSJ1K8" H 4025 6240 50  0001 L CNN "Description"
+F 5 "" H 4025 6140 50  0001 L CNN "Height"
+F 6 "279-ROX5SSJ1K8" H 4025 6040 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=279-ROX5SSJ1K8" H 4025 5940 50  0001 L CNN "Mouser Price/Stock"
+F 8 "TE Connectivity" H 4025 5840 50  0001 L CNN "Manufacturer_Name"
+F 9 "ROX5SSJ1K8" H 4025 5740 50  0001 L CNN "Manufacturer_Part_Number"
+	1    3475 6390
+	0    1    1    0   
+$EndComp
+$EndSCHEMATC
