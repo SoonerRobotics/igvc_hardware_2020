@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name PeripheralPowerControl-rescue)(type Legacy)(uri ${KIPRJMOD}/PeripheralPowerControl-rescue.lib)(options "")(descr ""))
+)

@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:PeripheralPowerControl-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -15,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L LibraryLoader:64600001003 FUSE1
+L PeripheralPowerControl-rescue:64600001003-LibraryLoader FUSE1
 U 1 1 5D945058
 P 3800 3700
 AR Path="/5D945058" Ref="FUSE1"  Part="1" 
@@ -41,7 +40,7 @@ F 9 "64600001003" H 4450 3100 50  0001 L CNN "Manufacturer_Part_Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L LibraryLoader:IPP120P04P4L03AKSA1 PMOS1
+L PeripheralPowerControl-rescue:IPP120P04P4L03AKSA1-LibraryLoader PMOS1
 U 1 1 5D945064
 P 3500 3050
 AR Path="/5D945064" Ref="PMOS1"  Part="1" 
@@ -116,29 +115,12 @@ Wire Wire Line
 	6100 3700 5800 3700
 Wire Wire Line
 	5100 3700 4600 3700
-$Comp
-L Connector_Generic:Conn_01x03 J1
-U 1 1 5D94D2BC
-P 2400 1800
-F 0 "J1" H 2318 1475 50  0000 C CNN
-F 1 "Conn_01x03" H 2318 1566 50  0000 C CNN
-F 2 "Connector_JST:JST_EH_B3B-EH-A_1x03_P2.50mm_Vertical" H 2400 1800 50  0001 C CNN
-F 3 "~" H 2400 1800 50  0001 C CNN
-	1    2400 1800
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	2600 1700 3800 1700
 Wire Wire Line
 	2850 1900 2850 3900
 Wire Wire Line
 	3200 3050 3200 2000
 Wire Wire Line
-	3200 1800 2600 1800
-Wire Wire Line
 	2850 3900 5100 3900
-Wire Wire Line
-	2850 1900 2600 1900
 $Comp
 L power:GND #PWR0101
 U 1 1 5D95AD47
@@ -220,4 +202,31 @@ Wire Wire Line
 Connection ~ 3800 2000
 Wire Wire Line
 	3800 3450 3800 3700
+Wire Wire Line
+	2850 1900 2600 1900
+Wire Wire Line
+	3200 1800 2600 1800
+Wire Wire Line
+	2600 1700 3800 1700
+$Comp
+L Connector_Generic:Conn_01x03 J1
+U 1 1 5D94D2BC
+P 2400 1800
+F 0 "J1" H 2318 1475 50  0000 C CNN
+F 1 "Conn_01x03" H 2318 1566 50  0000 C CNN
+F 2 "Connector_JST:JST_EH_B3B-EH-A_1x03_P2.50mm_Vertical" H 2400 1800 50  0001 C CNN
+F 3 "~" H 2400 1800 50  0001 C CNN
+	1    2400 1800
+	-1   0    0    1   
+$EndComp
+Text Notes 1960 1920 0    50   ~ 0
+3: Vcc\n2: Enable\n1: Ground
+Text Notes 3130 1630 0    50   ~ 0
+100K pull-up resistor\n
+Text Notes 3920 2220 0    50   ~ 0
+The pull-up resistor is used to\nensure power is cut to the\nperipheral when the enable signal\nis disconnected\n
+Text Notes 3950 2960 0    50   ~ 0
+PMOS used to enable and disable\nthe peripheral
+Text Notes 6540 3810 0    50   ~ 0
+1: Peripheral Vcc\n2: Peripheral GND
 $EndSCHEMATC

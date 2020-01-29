@@ -64,7 +64,7 @@ F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=726-IPP120P04P4L03AK" H 3
 F 8 "Infineon" H 3950 2400 50  0001 L CNN "Manufacturer_Name"
 F 9 "IPP120P04P4L03AKSA1" H 3950 2300 50  0001 L CNN "Manufacturer_Part_Number"
 	1    3500 3050
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	3200 3050 3500 3050
@@ -116,8 +116,6 @@ Wire Wire Line
 	6100 3700 5800 3700
 Wire Wire Line
 	5100 3700 4600 3700
-Wire Wire Line
-	3800 3250 3800 3700
 $Comp
 L Connector_Generic:Conn_01x03 J1
 U 1 1 5D94D2BC
@@ -168,9 +166,6 @@ Wire Wire Line
 	3800 1700 3800 2000
 Wire Wire Line
 	3650 2000 3800 2000
-Connection ~ 3800 2000
-Wire Wire Line
-	3800 2000 3800 2650
 Wire Wire Line
 	3350 2000 3200 2000
 Connection ~ 3200 2000
@@ -220,4 +215,9 @@ F 3 "~" H 8150 2000 50  0001 C CNN
 	1    8150 2000
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	3800 2850 3800 2000
+Connection ~ 3800 2000
+Wire Wire Line
+	3800 3450 3800 3700
 $EndSCHEMATC
