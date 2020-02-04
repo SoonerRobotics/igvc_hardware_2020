@@ -4,20 +4,20 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "Motor Controller Direction Override for E-Stop IGVC"
+Title ""
 Date ""
 Rev ""
-Comp "Sooner Competitive Robotics"
-Comment1 "The inputs are from an Arduino/Nucleo that control the direction of the motors. "
-Comment2 "The outputs control the direction of the motors. Each motor has two direction pins that determine direction."
-Comment3 "VCC = 5 Volts if an Arduino is used. VCC = 3.3 volts if a Nucleo is used"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L estop-rescue:GND-Adafruit_Feather_M0_RFMxx-eagle-import #GND0105
+L estop-rescue:GND-Adafruit_Feather_M0_RFMxx-eagle-import #GND02
 U 1 1 5DDEBC9A
 P 3245 6500
-F 0 "#GND0105" H 3245 6500 50  0001 C CNN
+F 0 "#GND02" H 3245 6500 50  0001 C CNN
 F 1 "GND" H 3245 6379 59  0000 C CNN
 F 2 "" H 3245 6500 50  0001 C CNN
 F 3 "" H 3245 6500 50  0001 C CNN
@@ -27,10 +27,10 @@ $EndComp
 Wire Wire Line
 	3245 4565 3245 5015
 $Comp
-L estop-rescue:ROX5SSJ1K8-USBhUB 10kR6
+L estop-rescue:ROX5SSJ1K8-USBhUB 10Kr4
 U 1 1 5DE01660
 P 3245 5700
-F 0 "10kR6" V 3549 5788 50  0000 L CNN
+F 0 "10Kr4" V 3549 5788 50  0000 L CNN
 F 1 "ROX5SSJ1K8" V 3640 5788 50  0001 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 3795 5750 50  0001 L CNN
 F 3 "https://componentsearchengine.com/Datasheets/1/ROX5SSJ1K8.pdf" H 3795 5650 50  0001 L CNN
@@ -47,10 +47,10 @@ Wire Wire Line
 	2665 5215 2945 5215
 Connection ~ 2665 5215
 $Comp
-L estop-rescue:ROX5SSJ1K8-USBhUB 10kR5
+L estop-rescue:ROX5SSJ1K8-USBhUB 10Kr2
 U 1 1 5DDFFFB7
 P 2665 5215
-F 0 "10kR5" V 2969 5303 50  0000 L CNN
+F 0 "10Kr2" V 2969 5303 50  0000 L CNN
 F 1 "ROX5SSJ1K8" V 3060 5303 50  0001 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 3215 5265 50  0001 L CNN
 F 3 "https://componentsearchengine.com/Datasheets/1/ROX5SSJ1K8.pdf" H 3215 5165 50  0001 L CNN
@@ -66,10 +66,10 @@ $EndComp
 Wire Wire Line
 	2310 5215 2665 5215
 $Comp
-L estop-rescue:IRF530NPBF-USBhUB Mosfet3
+L estop-rescue:IRF530NPBF-USBhUB M2
 U 1 1 5DDEBCD7
 P 2945 5215
-F 0 "Mosfet3" H 3375 5361 50  0000 L CNN
+F 0 "M2" H 3375 5361 50  0000 L CNN
 F 1 "IRF530NPBF" H 3375 5270 50  0000 L CNN
 F 2 "TO254P469X1042X1967-3P" H 3395 5165 50  0001 L CNN
 F 3 "https://componentsearchengine.com/Datasheets/1/IRF530NPBF.pdf" H 3395 5065 50  0001 L CNN
@@ -97,10 +97,10 @@ Input1
 Wire Wire Line
 	2665 5920 2665 5915
 $Comp
-L power:VCC #PWR0103
+L power:VCC #PWR02
 U 1 1 5DDEBC82
 P 2665 5920
-F 0 "#PWR0103" H 2665 5770 50  0001 C CNN
+F 0 "#PWR02" H 2665 5770 50  0001 C CNN
 F 1 "VCC" H 2683 6093 50  0000 C CNN
 F 2 "" H 2665 5920 50  0001 C CNN
 F 3 "" H 2665 5920 50  0001 C CNN
@@ -109,15 +109,13 @@ F 3 "" H 2665 5920 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3245 5015 3245 5020
-Wire Wire Line
-	4130 4460 4130 4455
-Text GLabel 3515 5655 2    50   Output ~ 0
+Text GLabel 3515 5655 2    50   Input ~ 0
 Output1
 $Comp
-L estop-rescue:GND-Adafruit_Feather_M0_RFMxx-eagle-import #GND0101
+L estop-rescue:GND-Adafruit_Feather_M0_RFMxx-eagle-import #GND04
 U 1 1 5DE658A1
 P 5330 6460
-F 0 "#GND0101" H 5330 6460 50  0001 C CNN
+F 0 "#GND04" H 5330 6460 50  0001 C CNN
 F 1 "GND" H 5330 6339 59  0000 C CNN
 F 2 "" H 5330 6460 50  0001 C CNN
 F 3 "" H 5330 6460 50  0001 C CNN
@@ -127,10 +125,10 @@ $EndComp
 Wire Wire Line
 	5330 4525 5330 4975
 $Comp
-L estop-rescue:ROX5SSJ1K8-USBhUB 10kR8
+L estop-rescue:ROX5SSJ1K8-USBhUB 10Kr8
 U 1 1 5DE658AF
 P 5330 5660
-F 0 "10kR8" V 5634 5748 50  0000 L CNN
+F 0 "10Kr8" V 5634 5748 50  0000 L CNN
 F 1 "ROX5SSJ1K8" V 5725 5748 50  0001 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 5880 5710 50  0001 L CNN
 F 3 "https://componentsearchengine.com/Datasheets/1/ROX5SSJ1K8.pdf" H 5880 5610 50  0001 L CNN
@@ -147,10 +145,10 @@ Wire Wire Line
 	4750 5175 5030 5175
 Connection ~ 4750 5175
 $Comp
-L estop-rescue:ROX5SSJ1K8-USBhUB 10kR7
+L estop-rescue:ROX5SSJ1K8-USBhUB 10Kr6
 U 1 1 5DE658BD
 P 4750 5175
-F 0 "10kR7" V 5054 5263 50  0000 L CNN
+F 0 "10Kr6" V 5054 5263 50  0000 L CNN
 F 1 "ROX5SSJ1K8" V 5145 5263 50  0001 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 5300 5225 50  0001 L CNN
 F 3 "https://componentsearchengine.com/Datasheets/1/ROX5SSJ1K8.pdf" H 5300 5125 50  0001 L CNN
@@ -166,10 +164,10 @@ $EndComp
 Wire Wire Line
 	4395 5175 4750 5175
 $Comp
-L estop-rescue:IRF530NPBF-USBhUB Mosfet4
+L estop-rescue:IRF530NPBF-USBhUB M4
 U 1 1 5DE658CA
 P 5030 5175
-F 0 "Mosfet4" H 5460 5321 50  0000 L CNN
+F 0 "M4" H 5460 5321 50  0000 L CNN
 F 1 "IRF530NPBF" H 5460 5230 50  0000 L CNN
 F 2 "TO254P469X1042X1967-3P" H 5480 5125 50  0001 L CNN
 F 3 "https://componentsearchengine.com/Datasheets/1/IRF530NPBF.pdf" H 5480 5025 50  0001 L CNN
@@ -197,10 +195,10 @@ Input2
 Wire Wire Line
 	4750 5880 4750 5875
 $Comp
-L power:VCC #PWR0101
+L power:VCC #PWR04
 U 1 1 5DE658D8
 P 4750 5880
-F 0 "#PWR0101" H 4750 5730 50  0001 C CNN
+F 0 "#PWR04" H 4750 5730 50  0001 C CNN
 F 1 "VCC" H 4768 6053 50  0000 C CNN
 F 2 "" H 4750 5880 50  0001 C CNN
 F 3 "" H 4750 5880 50  0001 C CNN
@@ -209,13 +207,13 @@ F 3 "" H 4750 5880 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5330 4975 5330 4980
-Text GLabel 5600 5615 2    50   Output ~ 0
+Text GLabel 5600 5615 2    50   Input ~ 0
 Output2
 $Comp
-L estop-rescue:GND-Adafruit_Feather_M0_RFMxx-eagle-import #GND0102
+L estop-rescue:GND-Adafruit_Feather_M0_RFMxx-eagle-import #GND01
 U 1 1 5DE6994B
 P 3020 4080
-F 0 "#GND0102" H 3020 4080 50  0001 C CNN
+F 0 "#GND01" H 3020 4080 50  0001 C CNN
 F 1 "GND" H 3020 3959 59  0000 C CNN
 F 2 "" H 3020 4080 50  0001 C CNN
 F 3 "" H 3020 4080 50  0001 C CNN
@@ -225,10 +223,10 @@ $EndComp
 Wire Wire Line
 	3020 2145 3020 2595
 $Comp
-L estop-rescue:ROX5SSJ1K8-USBhUB 10kR2
+L estop-rescue:ROX5SSJ1K8-USBhUB 10Kr3
 U 1 1 5DE69959
 P 3020 3280
-F 0 "10kR2" V 3324 3368 50  0000 L CNN
+F 0 "10Kr3" V 3324 3368 50  0000 L CNN
 F 1 "ROX5SSJ1K8" V 3415 3368 50  0001 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 3570 3330 50  0001 L CNN
 F 3 "https://componentsearchengine.com/Datasheets/1/ROX5SSJ1K8.pdf" H 3570 3230 50  0001 L CNN
@@ -245,10 +243,10 @@ Wire Wire Line
 	2440 2795 2720 2795
 Connection ~ 2440 2795
 $Comp
-L estop-rescue:ROX5SSJ1K8-USBhUB 10kR1
+L estop-rescue:ROX5SSJ1K8-USBhUB 10Kr1
 U 1 1 5DE69967
 P 2440 2795
-F 0 "10kR1" V 2744 2883 50  0000 L CNN
+F 0 "10Kr1" V 2744 2883 50  0000 L CNN
 F 1 "ROX5SSJ1K8" V 2835 2883 50  0001 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 2990 2845 50  0001 L CNN
 F 3 "https://componentsearchengine.com/Datasheets/1/ROX5SSJ1K8.pdf" H 2990 2745 50  0001 L CNN
@@ -264,10 +262,10 @@ $EndComp
 Wire Wire Line
 	2085 2795 2440 2795
 $Comp
-L estop-rescue:IRF530NPBF-USBhUB Mosfet1
+L estop-rescue:IRF530NPBF-USBhUB M1
 U 1 1 5DE69974
 P 2720 2795
-F 0 "Mosfet1" H 3150 2941 50  0000 L CNN
+F 0 "M1" H 3150 2941 50  0000 L CNN
 F 1 "IRF530NPBF" H 3150 2850 50  0000 L CNN
 F 2 "TO254P469X1042X1967-3P" H 3170 2745 50  0001 L CNN
 F 3 "https://componentsearchengine.com/Datasheets/1/IRF530NPBF.pdf" H 3170 2645 50  0001 L CNN
@@ -295,10 +293,10 @@ Input4
 Wire Wire Line
 	2440 3500 2440 3495
 $Comp
-L power:VCC #PWR0102
+L power:VCC #PWR01
 U 1 1 5DE69982
 P 2440 3500
-F 0 "#PWR0102" H 2440 3350 50  0001 C CNN
+F 0 "#PWR01" H 2440 3350 50  0001 C CNN
 F 1 "VCC" H 2458 3673 50  0000 C CNN
 F 2 "" H 2440 3500 50  0001 C CNN
 F 3 "" H 2440 3500 50  0001 C CNN
@@ -307,15 +305,13 @@ F 3 "" H 2440 3500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3020 2595 3020 2600
-Wire Wire Line
-	3905 2040 3905 2035
-Text GLabel 3290 3235 2    50   Output ~ 0
+Text GLabel 3290 3235 2    50   Input ~ 0
 Output4
 $Comp
-L estop-rescue:GND-Adafruit_Feather_M0_RFMxx-eagle-import #GND0103
+L estop-rescue:GND-Adafruit_Feather_M0_RFMxx-eagle-import #GND03
 U 1 1 5DE6C150
 P 5255 4105
-F 0 "#GND0103" H 5255 4105 50  0001 C CNN
+F 0 "#GND03" H 5255 4105 50  0001 C CNN
 F 1 "GND" H 5255 3984 59  0000 C CNN
 F 2 "" H 5255 4105 50  0001 C CNN
 F 3 "" H 5255 4105 50  0001 C CNN
@@ -325,10 +321,10 @@ $EndComp
 Wire Wire Line
 	5255 2170 5255 2620
 $Comp
-L estop-rescue:ROX5SSJ1K8-USBhUB 10kR4
+L estop-rescue:ROX5SSJ1K8-USBhUB 10Kr7
 U 1 1 5DE6C15E
 P 5255 3305
-F 0 "10kR4" V 5559 3393 50  0000 L CNN
+F 0 "10Kr7" V 5559 3393 50  0000 L CNN
 F 1 "ROX5SSJ1K8" V 5650 3393 50  0001 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 5805 3355 50  0001 L CNN
 F 3 "https://componentsearchengine.com/Datasheets/1/ROX5SSJ1K8.pdf" H 5805 3255 50  0001 L CNN
@@ -343,12 +339,11 @@ F 9 "ROX5SSJ1K8" H 5805 2655 50  0001 L CNN "Manufacturer_Part_Number"
 $EndComp
 Wire Wire Line
 	4675 2820 4955 2820
-Connection ~ 4675 2820
 $Comp
-L estop-rescue:ROX5SSJ1K8-USBhUB 10kR3
+L estop-rescue:ROX5SSJ1K8-USBhUB 10Kr5
 U 1 1 5DE6C16C
 P 4675 2820
-F 0 "10kR3" V 4979 2908 50  0000 L CNN
+F 0 "10Kr5" V 4979 2908 50  0000 L CNN
 F 1 "ROX5SSJ1K8" V 5070 2908 50  0001 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 5225 2870 50  0001 L CNN
 F 3 "https://componentsearchengine.com/Datasheets/1/ROX5SSJ1K8.pdf" H 5225 2770 50  0001 L CNN
@@ -361,13 +356,11 @@ F 9 "ROX5SSJ1K8" H 5225 2170 50  0001 L CNN "Manufacturer_Part_Number"
 	1    4675 2820
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	4320 2820 4675 2820
 $Comp
-L estop-rescue:IRF530NPBF-USBhUB mosfet2
+L estop-rescue:IRF530NPBF-USBhUB M3
 U 1 1 5DE6C179
 P 4955 2820
-F 0 "mosfet2" H 5385 2966 50  0000 L CNN
+F 0 "M3" H 5385 2966 50  0000 L CNN
 F 1 "IRF530NPBF" H 5385 2875 50  0000 L CNN
 F 2 "TO254P469X1042X1967-3P" H 5405 2770 50  0001 L CNN
 F 3 "https://componentsearchengine.com/Datasheets/1/IRF530NPBF.pdf" H 5405 2670 50  0001 L CNN
@@ -390,15 +383,13 @@ Wire Wire Line
 	5255 3260 5525 3260
 Wire Wire Line
 	5255 3220 5255 3260
-Text GLabel 4320 2820 0    50   Input ~ 0
-Input3
 Wire Wire Line
 	4675 3525 4675 3520
 $Comp
-L power:VCC #PWR0104
+L power:VCC #PWR03
 U 1 1 5DE6C187
 P 4675 3525
-F 0 "#PWR0104" H 4675 3375 50  0001 C CNN
+F 0 "#PWR03" H 4675 3375 50  0001 C CNN
 F 1 "VCC" H 4693 3698 50  0000 C CNN
 F 2 "" H 4675 3525 50  0001 C CNN
 F 3 "" H 4675 3525 50  0001 C CNN
@@ -409,13 +400,13 @@ Wire Wire Line
 	5255 2620 5255 2625
 Wire Wire Line
 	6140 2065 6140 2060
-Text GLabel 5525 3260 2    50   Output ~ 0
+Text GLabel 5525 3260 2    50   Input ~ 0
 Output3
 $Comp
-L power:VCC #PWR0105
+L power:VCC #PWR05
 U 1 1 5DE78044
 P 7445 5950
-F 0 "#PWR0105" H 7445 5800 50  0001 C CNN
+F 0 "#PWR05" H 7445 5800 50  0001 C CNN
 F 1 "VCC" V 7463 6077 50  0000 L CNN
 F 2 "" H 7445 5950 50  0001 C CNN
 F 3 "" H 7445 5950 50  0001 C CNN
@@ -423,10 +414,10 @@ F 3 "" H 7445 5950 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L estop-rescue:GND-Adafruit_Feather_M0_RFMxx-eagle-import #GND0104
+L estop-rescue:GND-Adafruit_Feather_M0_RFMxx-eagle-import #GND05
 U 1 1 5DE79EBA
 P 7345 5750
-F 0 "#GND0104" H 7345 5750 50  0001 C CNN
+F 0 "#GND05" H 7345 5750 50  0001 C CNN
 F 1 "GND" V 7345 5681 59  0000 R CNN
 F 2 "" H 7345 5750 50  0001 C CNN
 F 3 "" H 7345 5750 50  0001 C CNN
@@ -470,13 +461,13 @@ F 3 "~" H 7660 4840 50  0001 C CNN
 	1    7660 4840
 	1    0    0    -1  
 $EndComp
-Text GLabel 7460 5040 0    50   Output ~ 0
+Text GLabel 7460 5040 0    50   Input ~ 0
 Output4
-Text GLabel 7460 4940 0    50   Output ~ 0
+Text GLabel 7460 4940 0    50   Input ~ 0
 Output3
-Text GLabel 7460 4840 0    50   Output ~ 0
+Text GLabel 7460 4840 0    50   Input ~ 0
 Output2
-Text GLabel 7460 4740 0    50   Output ~ 0
+Text GLabel 7460 4740 0    50   Input ~ 0
 Output1
 Text GLabel 7440 5240 0    50   Input ~ 0
 Input1
@@ -487,10 +478,10 @@ Input3
 Text GLabel 7440 5540 0    50   Input ~ 0
 Input4
 $Comp
-L estop-rescue:MOUNTINGHOLE-Adafruit_Feather_M0_RFMxx-eagle-import MountingHole1
+L estop-rescue:MOUNTINGHOLE-Adafruit_Feather_M0_RFMxx-eagle-import MountingHole4
 U 1 1 5DE87FC5
 P 7650 4005
-F 0 "MountingHole1" H 7780 4005 50  0000 L CNN
+F 0 "MountingHole4" H 7780 4005 50  0000 L CNN
 F 1 "MOUNTINGHOLE" H 7650 4005 50  0001 C CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3" H 7650 4005 50  0001 C CNN
 F 3 "" H 7650 4005 50  0001 C CNN
@@ -498,10 +489,10 @@ F 3 "" H 7650 4005 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L estop-rescue:MOUNTINGHOLE-Adafruit_Feather_M0_RFMxx-eagle-import MountingHole2
+L estop-rescue:MOUNTINGHOLE-Adafruit_Feather_M0_RFMxx-eagle-import MountingHole3
 U 1 1 5DE888AD
 P 7650 3730
-F 0 "MountingHole2" H 7780 3730 50  0000 L CNN
+F 0 "MountingHole3" H 7780 3730 50  0000 L CNN
 F 1 "MOUNTINGHOLE" H 7650 3730 50  0001 C CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3" H 7650 3730 50  0001 C CNN
 F 3 "" H 7650 3730 50  0001 C CNN
@@ -509,10 +500,10 @@ F 3 "" H 7650 3730 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L estop-rescue:MOUNTINGHOLE-Adafruit_Feather_M0_RFMxx-eagle-import MountingHole3
+L estop-rescue:MOUNTINGHOLE-Adafruit_Feather_M0_RFMxx-eagle-import MountingHole2
 U 1 1 5DE8937B
 P 7650 3480
-F 0 "MountingHole3" H 7780 3480 50  0000 L CNN
+F 0 "MountingHole2" H 7780 3480 50  0000 L CNN
 F 1 "MOUNTINGHOLE" H 7650 3480 50  0001 C CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3" H 7650 3480 50  0001 C CNN
 F 3 "" H 7650 3480 50  0001 C CNN
@@ -520,32 +511,35 @@ F 3 "" H 7650 3480 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L estop-rescue:MOUNTINGHOLE-Adafruit_Feather_M0_RFMxx-eagle-import MountingHole4
+L estop-rescue:MOUNTINGHOLE-Adafruit_Feather_M0_RFMxx-eagle-import MountingHole1
 U 1 1 5DE89D78
 P 7645 3235
-F 0 "MountingHole4" H 7775 3235 50  0000 L CNN
+F 0 "MountingHole1" H 7775 3235 50  0000 L CNN
 F 1 "MOUNTINGHOLE" H 7645 3235 50  0001 C CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3" H 7645 3235 50  0001 C CNN
 F 3 "" H 7645 3235 50  0001 C CNN
 	1    7645 3235
 	1    0    0    -1  
 $EndComp
-Text Notes 9050 5200 0    50   ~ 0
-INPUT: LOW, ENABLE: LOW, = OUTPUT: LOW\nINPUT: LOW, ENABLE: HIGHT = OUTPUT:LOW\nINPUT HIGH, ENABLE: LOW = OUTPUT LOW\nINPUT HIGH, ENABLE: LOW = OUTPUT HIGH
-Text Notes 8800 5600 0    50   ~ 0
-Motor En A : Low, Motor En B: Low = Motor does nothing\nMotor En A: High, Motor En B: Low = Motor goes forward\nMotor En A: Low, Motor En B: High = Motor goes backwards\nMotor En A: High, Motor En B: High = Motor breaks and stops
+Text GLabel 4320 2820 0    50   Input ~ 0
+Input3
+Connection ~ 4675 2820
+Wire Wire Line
+	4320 2820 4675 2820
+Text Notes 8350 4650 0    50   ~ 0
+Each motor controller has 2 Enable pins per motor (EnA and EnB). \nEnA Low, EnB Low = Motor coasts / off\nEnA High, EnB Low = Motor goes forward\nEnB Low, EnB High = Motor goes backwards\nEnA High, EnB High = Motor brakes and doesn't move.
 Wire Notes Line
-	9000 4850 9000 5250
+	8300 4200 11000 4200
 Wire Notes Line
-	10750 5250 10750 4850
+	11000 4750 8300 4750
+Text Notes 8350 5200 0    50   ~ 0
+Input Low, Enable Low = Output Low\nInput High, Enable Low = Output Low\nInput Low, Enable High= Output Low\nInput High, Enable High = Output High\n\n
 Wire Notes Line
-	10750 4850 9000 4850
+	8300 5150 11000 5150
 Wire Notes Line
-	8750 5250 8750 5650
+	11000 4200 11000 5150
 Wire Notes Line
-	8750 5650 11200 5650
-Wire Notes Line
-	11200 5650 11200 5250
-Wire Notes Line
-	8750 5250 11200 5250
+	8300 4200 8300 5150
+Text Notes 6500 2850 0    50   ~ 0
+Each board controls four enable pins.\nMotor1 EnA, Motor1 EnB, Motor2 EnA, Motor2 EnB\n\nThe Inputs are from either a Nucleo or Arduino output a high or low digital signal. \nThe enable pin is controlled using another board. The enable determines if the motor controller should be on or off. \nWhen Enable is high then the motor controller should be on and we can control the motors normally. \nWhen Enable is low then the motor controller is off and the input does not matter.
 $EndSCHEMATC
