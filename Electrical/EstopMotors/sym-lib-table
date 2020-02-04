@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name estop-rescue)(type Legacy)(uri ${KIPRJMOD}/estop-rescue.lib)(options "")(descr ""))
+)
