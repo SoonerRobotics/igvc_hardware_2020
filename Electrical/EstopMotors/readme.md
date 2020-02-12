@@ -14,7 +14,7 @@ The schematic has enough outputs for two motors.
 2x 4 port JST connector
 
 1x 3 port JST connector
-## Images
+## Block diagram
 ![Block Diagram](BlockDiagramMotorEstop.png)
 ## Designers
 
