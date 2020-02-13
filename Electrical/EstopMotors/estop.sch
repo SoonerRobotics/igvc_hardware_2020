@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 1
 Title "Estop"
 Date ""
-Rev "V2"
+Rev "V3"
 Comp "Tyler Julian (Sooner Competitive Robotics)"
 Comment1 ""
 Comment2 ""
@@ -45,7 +45,7 @@ U 1 1 5DE76B51
 P 7645 5850
 F 0 "Control1" H 7725 5892 50  0000 L CNN
 F 1 "Conn_01x03" H 7725 5801 50  0000 L CNN
-F 2 "Connector_Wire:SolderWirePad_1x03_P7.62mm_Drill2.5mm" H 7645 5850 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7645 5850 50  0001 C CNN
 F 3 "~" H 7645 5850 50  0001 C CNN
 	1    7645 5850
 	1    0    0    -1  
@@ -56,7 +56,7 @@ U 1 1 5DE7F041
 P 7640 5340
 F 0 "Input1" H 7720 5332 50  0000 L CNN
 F 1 "Conn_01x04" H 7720 5241 50  0000 L CNN
-F 2 "Connector_Wire:SolderWirePad_1x04_P7.62mm_Drill2.5mm" H 7640 5340 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 7640 5340 50  0001 C CNN
 F 3 "~" H 7640 5340 50  0001 C CNN
 	1    7640 5340
 	1    0    0    -1  
@@ -67,7 +67,7 @@ U 1 1 5DE801A3
 P 7660 4840
 F 0 "Output1" H 7740 4832 50  0000 L CNN
 F 1 "Conn_01x04" H 7740 4741 50  0000 L CNN
-F 2 "Connector_Wire:SolderWirePad_1x04_P7.62mm_Drill2.5mm" H 7660 4840 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 7660 4840 50  0001 C CNN
 F 3 "~" H 7660 4840 50  0001 C CNN
 	1    7660 4840
 	1    0    0    -1  
@@ -132,8 +132,8 @@ F 3 "" H 7645 3235 50  0001 C CNN
 	1    7645 3235
 	1    0    0    -1  
 $EndComp
-Text Notes 8350 4650 0    50   ~ 0
-Each motor controller has 2 Enable pins per motor (EnA and EnB). \nEnA Low, EnB Low = Motor coasts / off\nEnA High, EnB Low = Motor goes forward\nEnB Low, EnB High = Motor goes backwards\nEnA High, EnB High = Motor brakes and doesn't move.
+Text Notes 8374 4547 0    50   ~ 0
+Each motor controller has 2 Enable pins per motor. \nOutputs 1 and 2 go to motor 1.\nOutpus 3 and 4 got to motor 2.
 Wire Notes Line
 	8300 4200 11000 4200
 Wire Notes Line
@@ -158,17 +158,15 @@ Wire Notes Line
 	6450 2900 6450 2250
 Text GLabel 1057 2175 0    50   Input ~ 0
 Input1
-Wire Wire Line
-	1173 2879 1173 2874
 $Comp
 L power:VCC #PWR01
 U 1 1 5E4308E6
-P 1173 2879
-F 0 "#PWR01" H 1173 2729 50  0001 C CNN
-F 1 "VCC" H 1191 3052 50  0000 C CNN
-F 2 "" H 1173 2879 50  0001 C CNN
-F 3 "" H 1173 2879 50  0001 C CNN
-	1    1173 2879
+P 1171 2876
+F 0 "#PWR01" H 1171 2726 50  0001 C CNN
+F 1 "VCC" H 1189 3049 50  0000 C CNN
+F 2 "" H 1171 2876 50  0001 C CNN
+F 3 "" H 1171 2876 50  0001 C CNN
+	1    1171 2876
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
@@ -206,7 +204,7 @@ U 1 1 5DE69974
 P 2150 2176
 F 0 "M1" H 2580 2322 50  0000 L CNN
 F 1 "IRF530NPBF" H 2580 2231 50  0000 L CNN
-F 2 "TO254P469X1042X1967-3P" H 2600 2126 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2600 2126 50  0001 L CNN
 F 3 "https://componentsearchengine.com/Datasheets/1/IRF530NPBF.pdf" H 2600 2026 50  0001 L CNN
 F 4 "IRF530NPBF N-Channel MOSFET, 17 A, 100 V HEXFET, 3-Pin TO-220AB Infineon" H 2600 1926 50  0001 L CNN "Description"
 F 5 "4.69" H 2600 1826 50  0001 L CNN "Height"
@@ -254,28 +252,6 @@ Wire Wire Line
 	2450 991  2450 973 
 Wire Wire Line
 	2450 973  2451 973 
-Connection ~ 1171 2176
-Wire Wire Line
-	1171 2176 1450 2176
-Wire Wire Line
-	1171 2176 1057 2176
-$Comp
-L estop-rescue:ROX5SSJ1K8-USBhUB 10Kr1
-U 1 1 5E4308DE
-P 1171 2176
-F 0 "10Kr1" V 1475 2264 50  0000 L CNN
-F 1 "ROX5SSJ1K8" V 1566 2264 50  0001 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 1721 2226 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/ROX5SSJ1K8.pdf" H 1721 2126 50  0001 L CNN
-F 4 "TE Connectivity 1.8k 5W Metal Oxide Resistor +/-5% +/-350ppm/C ROX5SSJ1K8" H 1721 2026 50  0001 L CNN "Description"
-F 5 "" H 1721 1926 50  0001 L CNN "Height"
-F 6 "279-ROX5SSJ1K8" H 1721 1826 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=279-ROX5SSJ1K8" H 1721 1726 50  0001 L CNN "Mouser Price/Stock"
-F 8 "TE Connectivity" H 1721 1626 50  0001 L CNN "Manufacturer_Name"
-F 9 "ROX5SSJ1K8" H 1721 1526 50  0001 L CNN "Manufacturer_Part_Number"
-	1    1171 2176
-	0    1    1    0   
-$EndComp
 Text GLabel 3021 1734 2    50   Input ~ 0
 Output1
 $Comp
@@ -405,23 +381,6 @@ F 3 "" H 5259 3146 50  0001 C CNN
 	1    5259 3146
 	-1   0    0    -1  
 $EndComp
-$Comp
-L estop-rescue:IRF530NPBF-USBhUB M3
-U 1 1 5E494495
-P 4959 2396
-F 0 "M3" H 5389 2542 50  0000 L CNN
-F 1 "IRF530NPBF" H 5389 2451 50  0000 L CNN
-F 2 "TO254P469X1042X1967-3P" H 5409 2346 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/IRF530NPBF.pdf" H 5409 2246 50  0001 L CNN
-F 4 "IRF530NPBF N-Channel MOSFET, 17 A, 100 V HEXFET, 3-Pin TO-220AB Infineon" H 5409 2146 50  0001 L CNN "Description"
-F 5 "4.69" H 5409 2046 50  0001 L CNN "Height"
-F 6 "942-IRF530NPBF" H 5409 1946 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=942-IRF530NPBF" H 5409 1846 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Infineon" H 5409 1746 50  0001 L CNN "Manufacturer_Name"
-F 9 "IRF530NPBF" H 5409 1646 50  0001 L CNN "Manufacturer_Part_Number"
-	1    4959 2396
-	1    0    0    -1  
-$EndComp
 Connection ~ 5259 2596
 Wire Wire Line
 	5259 1956 5259 1911
@@ -454,12 +413,12 @@ Wire Wire Line
 $Comp
 L power:VCC #PWR03
 U 1 1 5E49446E
-P 3982 3099
-F 0 "#PWR03" H 3982 2949 50  0001 C CNN
-F 1 "VCC" H 4000 3272 50  0000 C CNN
-F 2 "" H 3982 3099 50  0001 C CNN
-F 3 "" H 3982 3099 50  0001 C CNN
-	1    3982 3099
+P 3980 3096
+F 0 "#PWR03" H 3980 2946 50  0001 C CNN
+F 1 "VCC" H 3998 3269 50  0000 C CNN
+F 2 "" H 3980 3096 50  0001 C CNN
+F 3 "" H 3980 3096 50  0001 C CNN
+	1    3980 3096
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
@@ -566,7 +525,7 @@ U 1 1 5E49AF02
 P 2233 5400
 F 0 "M2" H 2663 5546 50  0000 L CNN
 F 1 "IRF530NPBF" H 2663 5455 50  0000 L CNN
-F 2 "TO254P469X1042X1967-3P" H 2683 5350 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2683 5350 50  0001 L CNN
 F 3 "https://componentsearchengine.com/Datasheets/1/IRF530NPBF.pdf" H 2683 5250 50  0001 L CNN
 F 4 "IRF530NPBF N-Channel MOSFET, 17 A, 100 V HEXFET, 3-Pin TO-220AB Infineon" H 2683 5150 50  0001 L CNN "Description"
 F 5 "4.69" H 2683 5050 50  0001 L CNN "Height"
@@ -609,12 +568,12 @@ Wire Wire Line
 $Comp
 L power:VCC #PWR02
 U 1 1 5E49AF23
-P 1256 6103
-F 0 "#PWR02" H 1256 5953 50  0001 C CNN
-F 1 "VCC" H 1274 6276 50  0000 C CNN
-F 2 "" H 1256 6103 50  0001 C CNN
-F 3 "" H 1256 6103 50  0001 C CNN
-	1    1256 6103
+P 1254 6100
+F 0 "#PWR02" H 1254 5950 50  0001 C CNN
+F 1 "VCC" H 1272 6273 50  0000 C CNN
+F 2 "" H 1254 6100 50  0001 C CNN
+F 3 "" H 1254 6100 50  0001 C CNN
+	1    1254 6100
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
@@ -721,7 +680,7 @@ U 1 1 5E4A132F
 P 4986 5887
 F 0 "M4" H 5416 6033 50  0000 L CNN
 F 1 "IRF530NPBF" H 5416 5942 50  0000 L CNN
-F 2 "TO254P469X1042X1967-3P" H 5436 5837 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 5436 5837 50  0001 L CNN
 F 3 "https://componentsearchengine.com/Datasheets/1/IRF530NPBF.pdf" H 5436 5737 50  0001 L CNN
 F 4 "IRF530NPBF N-Channel MOSFET, 17 A, 100 V HEXFET, 3-Pin TO-220AB Infineon" H 5436 5637 50  0001 L CNN "Description"
 F 5 "4.69" H 5436 5537 50  0001 L CNN "Height"
@@ -764,16 +723,57 @@ Wire Wire Line
 $Comp
 L power:VCC #PWR04
 U 1 1 5E4A1350
-P 4009 6590
-F 0 "#PWR04" H 4009 6440 50  0001 C CNN
-F 1 "VCC" H 4027 6763 50  0000 C CNN
-F 2 "" H 4009 6590 50  0001 C CNN
-F 3 "" H 4009 6590 50  0001 C CNN
-	1    4009 6590
+P 4007 6587
+F 0 "#PWR04" H 4007 6437 50  0001 C CNN
+F 1 "VCC" H 4025 6760 50  0000 C CNN
+F 2 "" H 4007 6587 50  0001 C CNN
+F 3 "" H 4007 6587 50  0001 C CNN
+	1    4007 6587
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	4009 6590 4009 6585
 Text GLabel 3893 5886 0    50   Input ~ 0
 Input4
+$Comp
+L estop-rescue:IRF530NPBF-USBhUB M3
+U 1 1 5E494495
+P 4959 2396
+F 0 "M3" H 5389 2542 50  0000 L CNN
+F 1 "IRF530NPBF" H 5389 2451 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 5409 2346 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/IRF530NPBF.pdf" H 5409 2246 50  0001 L CNN
+F 4 "IRF530NPBF N-Channel MOSFET, 17 A, 100 V HEXFET, 3-Pin TO-220AB Infineon" H 5409 2146 50  0001 L CNN "Description"
+F 5 "4.69" H 5409 2046 50  0001 L CNN "Height"
+F 6 "942-IRF530NPBF" H 5409 1946 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=942-IRF530NPBF" H 5409 1846 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Infineon" H 5409 1746 50  0001 L CNN "Manufacturer_Name"
+F 9 "IRF530NPBF" H 5409 1646 50  0001 L CNN "Manufacturer_Part_Number"
+	1    4959 2396
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1171 2176 1057 2176
+Wire Wire Line
+	1171 2176 1450 2176
+Connection ~ 1171 2176
+$Comp
+L estop-rescue:ROX5SSJ1K8-USBhUB 10Kr1
+U 1 1 5E4308DE
+P 1171 2176
+F 0 "10Kr1" V 1475 2264 50  0000 L CNN
+F 1 "ROX5SSJ1K8" V 1566 2264 50  0001 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 1721 2226 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/ROX5SSJ1K8.pdf" H 1721 2126 50  0001 L CNN
+F 4 "TE Connectivity 1.8k 5W Metal Oxide Resistor +/-5% +/-350ppm/C ROX5SSJ1K8" H 1721 2026 50  0001 L CNN "Description"
+F 5 "" H 1721 1926 50  0001 L CNN "Height"
+F 6 "279-ROX5SSJ1K8" H 1721 1826 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=279-ROX5SSJ1K8" H 1721 1726 50  0001 L CNN "Mouser Price/Stock"
+F 8 "TE Connectivity" H 1721 1626 50  0001 L CNN "Manufacturer_Name"
+F 9 "ROX5SSJ1K8" H 1721 1526 50  0001 L CNN "Manufacturer_Part_Number"
+	1    1171 2176
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1173 2879 1173 2874
 $EndSCHEMATC
