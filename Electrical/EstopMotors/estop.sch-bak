@@ -25,10 +25,10 @@ F 3 "" H 7445 5950 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L estop-rescue:GND-Adafruit_Feather_M0_RFMxx-eagle-import #GND05
+L estop-rescue:GND-Adafruit_Feather_M0_RFMxx-eagle-import #GND03
 U 1 1 5DE79EBA
 P 7345 5750
-F 0 "#GND05" H 7345 5750 50  0001 C CNN
+F 0 "#GND03" H 7345 5750 50  0001 C CNN
 F 1 "GND" V 7345 5681 59  0000 R CNN
 F 2 "" H 7345 5750 50  0001 C CNN
 F 3 "" H 7345 5750 50  0001 C CNN
@@ -161,12 +161,12 @@ Input1
 $Comp
 L power:VCC #PWR01
 U 1 1 5E4308E6
-P 1171 2876
-F 0 "#PWR01" H 1171 2726 50  0001 C CNN
-F 1 "VCC" H 1189 3049 50  0000 C CNN
-F 2 "" H 1171 2876 50  0001 C CNN
-F 3 "" H 1171 2876 50  0001 C CNN
-	1    1171 2876
+P 1293 2876
+F 0 "#PWR01" H 1293 2726 50  0001 C CNN
+F 1 "VCC" H 1311 3049 50  0000 C CNN
+F 2 "" H 1293 2876 50  0001 C CNN
+F 3 "" H 1293 2876 50  0001 C CNN
+	1    1293 2876
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
@@ -174,11 +174,11 @@ Wire Wire Line
 Wire Wire Line
 	1171 2163 1171 2175
 $Comp
-L estop-rescue:ROX5SSJ1K8-USBhUB 1Kr1
+L estop-rescue:ROX5SSJ1K8-USBhUB r2
 U 1 1 5E4308F5
 P 1450 2176
-F 0 "1Kr1" V 1754 2264 50  0000 L CNN
-F 1 "ROX5SSJ1K8" V 1845 2264 50  0001 L CNN
+F 0 "r2" V 1754 2264 50  0000 L CNN
+F 1 "1k" V 1845 2264 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 2000 2226 50  0001 L CNN
 F 3 "https://componentsearchengine.com/Datasheets/1/ROX5SSJ1K8.pdf" H 2000 2126 50  0001 L CNN
 F 4 "TE Connectivity 1.8k 5W Metal Oxide Resistor +/-5% +/-350ppm/C ROX5SSJ1K8" H 2000 2026 50  0001 L CNN "Description"
@@ -205,11 +205,11 @@ Connection ~ 1450 2176
 Wire Wire Line
 	1450 2176 1451 2176
 $Comp
-L estop-rescue:ROX5SSJ1K8-USBhUB 10Kr3
+L estop-rescue:ROX5SSJ1K8-USBhUB r5
 U 1 1 5DE69959
 P 2450 3334
-F 0 "10Kr3" V 2754 3422 50  0000 L CNN
-F 1 "ROX5SSJ1K8" V 2845 3422 50  0001 L CNN
+F 0 "r5" V 2754 3422 50  0000 L CNN
+F 1 "10k" V 2845 3422 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 3000 3384 50  0001 L CNN
 F 3 "https://componentsearchengine.com/Datasheets/1/ROX5SSJ1K8.pdf" H 3000 3284 50  0001 L CNN
 F 4 "TE Connectivity 1.8k 5W Metal Oxide Resistor +/-5% +/-350ppm/C ROX5SSJ1K8" H 3000 3184 50  0001 L CNN "Description"
@@ -225,30 +225,6 @@ Text GLabel 2451 1711 1    50   Input ~ 0
 Enable
 Wire Wire Line
 	2450 1711 2451 1711
-Wire Wire Line
-	1171 2176 1057 2176
-Wire Wire Line
-	1171 2176 1450 2176
-Connection ~ 1171 2176
-$Comp
-L estop-rescue:ROX5SSJ1K8-USBhUB 10Kr1
-U 1 1 5E4308DE
-P 1171 2176
-F 0 "10Kr1" V 1475 2264 50  0000 L CNN
-F 1 "ROX5SSJ1K8" V 1566 2264 50  0001 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 1721 2226 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/ROX5SSJ1K8.pdf" H 1721 2126 50  0001 L CNN
-F 4 "TE Connectivity 1.8k 5W Metal Oxide Resistor +/-5% +/-350ppm/C ROX5SSJ1K8" H 1721 2026 50  0001 L CNN "Description"
-F 5 "" H 1721 1926 50  0001 L CNN "Height"
-F 6 "279-ROX5SSJ1K8" H 1721 1826 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=279-ROX5SSJ1K8" H 1721 1726 50  0001 L CNN "Mouser Price/Stock"
-F 8 "TE Connectivity" H 1721 1626 50  0001 L CNN "Manufacturer_Name"
-F 9 "ROX5SSJ1K8" H 1721 1526 50  0001 L CNN "Manufacturer_Part_Number"
-	1    1171 2176
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1173 2879 1173 2874
 Text GLabel 2751 2611 2    50   Input ~ 0
 Output1
 Wire Wire Line
@@ -279,375 +255,6 @@ Wire Wire Line
 Connection ~ 2450 2376
 Wire Wire Line
 	2450 2376 2450 2611
-Text GLabel 3749 2142 0    50   Input ~ 0
-Input2
-$Comp
-L power:VCC #PWR04
-U 1 1 5E46C02C
-P 3863 2843
-F 0 "#PWR04" H 3863 2693 50  0001 C CNN
-F 1 "VCC" H 3881 3016 50  0000 C CNN
-F 2 "" H 3863 2843 50  0001 C CNN
-F 3 "" H 3863 2843 50  0001 C CNN
-	1    3863 2843
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	3749 2143 3749 2142
-Wire Wire Line
-	3863 2130 3863 2142
-$Comp
-L estop-rescue:ROX5SSJ1K8-USBhUB 1Kr4
-U 1 1 5E46C03A
-P 4142 2143
-F 0 "1Kr4" V 4446 2231 50  0000 L CNN
-F 1 "ROX5SSJ1K8" V 4537 2231 50  0001 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 4692 2193 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/ROX5SSJ1K8.pdf" H 4692 2093 50  0001 L CNN
-F 4 "TE Connectivity 1.8k 5W Metal Oxide Resistor +/-5% +/-350ppm/C ROX5SSJ1K8" H 4692 1993 50  0001 L CNN "Description"
-F 5 "" H 4692 1893 50  0001 L CNN "Height"
-F 6 "279-ROX5SSJ1K8" H 4692 1793 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=279-ROX5SSJ1K8" H 4692 1693 50  0001 L CNN "Mouser Price/Stock"
-F 8 "TE Connectivity" H 4692 1593 50  0001 L CNN "Manufacturer_Name"
-F 9 "ROX5SSJ1K8" H 4692 1493 50  0001 L CNN "Manufacturer_Part_Number"
-	1    4142 2143
-	1    0    0    1   
-$EndComp
-$Comp
-L estop-rescue:GND-Adafruit_Feather_M0_RFMxx-eagle-import #GND04
-U 1 1 5E46C040
-P 5142 3401
-F 0 "#GND04" H 5142 3401 50  0001 C CNN
-F 1 "GND" H 5142 3280 59  0000 C CNN
-F 2 "" H 5142 3401 50  0001 C CNN
-F 3 "" H 5142 3401 50  0001 C CNN
-	1    5142 3401
-	-1   0    0    -1  
-$EndComp
-Connection ~ 4142 2143
-Wire Wire Line
-	4142 2143 4143 2143
-$Comp
-L estop-rescue:ROX5SSJ1K8-USBhUB 10Kr8
-U 1 1 5E46C04E
-P 5142 3301
-F 0 "10Kr8" V 5446 3389 50  0000 L CNN
-F 1 "ROX5SSJ1K8" V 5537 3389 50  0001 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 5692 3351 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/ROX5SSJ1K8.pdf" H 5692 3251 50  0001 L CNN
-F 4 "TE Connectivity 1.8k 5W Metal Oxide Resistor +/-5% +/-350ppm/C ROX5SSJ1K8" H 5692 3151 50  0001 L CNN "Description"
-F 5 "" H 5692 3051 50  0001 L CNN "Height"
-F 6 "279-ROX5SSJ1K8" H 5692 2951 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=279-ROX5SSJ1K8" H 5692 2851 50  0001 L CNN "Mouser Price/Stock"
-F 8 "TE Connectivity" H 5692 2751 50  0001 L CNN "Manufacturer_Name"
-F 9 "ROX5SSJ1K8" H 5692 2651 50  0001 L CNN "Manufacturer_Part_Number"
-	1    5142 3301
-	0    1    -1   0   
-$EndComp
-Text GLabel 5143 1678 1    50   Input ~ 0
-Enable
-Wire Wire Line
-	5142 1678 5143 1678
-Wire Wire Line
-	3863 2143 3749 2143
-Wire Wire Line
-	3863 2143 4142 2143
-Connection ~ 3863 2143
-$Comp
-L estop-rescue:ROX5SSJ1K8-USBhUB 10Kr6
-U 1 1 5E46C05F
-P 3863 2143
-F 0 "10Kr6" V 4167 2231 50  0000 L CNN
-F 1 "ROX5SSJ1K8" V 4258 2231 50  0001 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 4413 2193 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/ROX5SSJ1K8.pdf" H 4413 2093 50  0001 L CNN
-F 4 "TE Connectivity 1.8k 5W Metal Oxide Resistor +/-5% +/-350ppm/C ROX5SSJ1K8" H 4413 1993 50  0001 L CNN "Description"
-F 5 "" H 4413 1893 50  0001 L CNN "Height"
-F 6 "279-ROX5SSJ1K8" H 4413 1793 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=279-ROX5SSJ1K8" H 4413 1693 50  0001 L CNN "Mouser Price/Stock"
-F 8 "TE Connectivity" H 4413 1593 50  0001 L CNN "Manufacturer_Name"
-F 9 "ROX5SSJ1K8" H 4413 1493 50  0001 L CNN "Manufacturer_Part_Number"
-	1    3863 2143
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3865 2846 3865 2841
-Text GLabel 5443 2578 2    50   Input ~ 0
-Output2
-Wire Wire Line
-	5142 2578 5443 2578
-Connection ~ 5142 2578
-Wire Wire Line
-	5142 2578 5142 2601
-Wire Wire Line
-	5142 1678 5142 1942
-$Comp
-L Transistor_FET:IRF9540N Q2
-U 1 1 5E46C06B
-P 5042 2142
-F 0 "Q2" H 5246 2096 50  0000 L CNN
-F 1 "IRF9530N" H 5246 2187 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 5242 2067 50  0001 L CIN
-F 3 "http://www.vishay.com/docs/91076/sihf9530.pdf" H 5042 2142 50  0001 L CNN
-	1    5042 2142
-	1    0    0    1   
-$EndComp
-Connection ~ 5142 1942
-Wire Wire Line
-	5142 1942 5142 1944
-Wire Wire Line
-	5142 2343 5143 2343
-Wire Wire Line
-	5142 2342 5142 2343
-Connection ~ 5142 2343
-Wire Wire Line
-	5142 2343 5142 2578
-Text GLabel 1075 4730 0    50   Input ~ 0
-Input3
-$Comp
-L power:VCC #PWR02
-U 1 1 5E46EEC0
-P 1189 5431
-F 0 "#PWR02" H 1189 5281 50  0001 C CNN
-F 1 "VCC" H 1207 5604 50  0000 C CNN
-F 2 "" H 1189 5431 50  0001 C CNN
-F 3 "" H 1189 5431 50  0001 C CNN
-	1    1189 5431
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	1075 4731 1075 4730
-Wire Wire Line
-	1189 4718 1189 4730
-$Comp
-L estop-rescue:ROX5SSJ1K8-USBhUB 1Kr2
-U 1 1 5E46EECE
-P 1468 4731
-F 0 "1Kr2" V 1772 4819 50  0000 L CNN
-F 1 "ROX5SSJ1K8" V 1863 4819 50  0001 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 2018 4781 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/ROX5SSJ1K8.pdf" H 2018 4681 50  0001 L CNN
-F 4 "TE Connectivity 1.8k 5W Metal Oxide Resistor +/-5% +/-350ppm/C ROX5SSJ1K8" H 2018 4581 50  0001 L CNN "Description"
-F 5 "" H 2018 4481 50  0001 L CNN "Height"
-F 6 "279-ROX5SSJ1K8" H 2018 4381 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=279-ROX5SSJ1K8" H 2018 4281 50  0001 L CNN "Mouser Price/Stock"
-F 8 "TE Connectivity" H 2018 4181 50  0001 L CNN "Manufacturer_Name"
-F 9 "ROX5SSJ1K8" H 2018 4081 50  0001 L CNN "Manufacturer_Part_Number"
-	1    1468 4731
-	1    0    0    1   
-$EndComp
-$Comp
-L estop-rescue:GND-Adafruit_Feather_M0_RFMxx-eagle-import #GND02
-U 1 1 5E46EED4
-P 2468 5989
-F 0 "#GND02" H 2468 5989 50  0001 C CNN
-F 1 "GND" H 2468 5868 59  0000 C CNN
-F 2 "" H 2468 5989 50  0001 C CNN
-F 3 "" H 2468 5989 50  0001 C CNN
-	1    2468 5989
-	-1   0    0    -1  
-$EndComp
-Connection ~ 1468 4731
-Wire Wire Line
-	1468 4731 1469 4731
-$Comp
-L estop-rescue:ROX5SSJ1K8-USBhUB 10Kr4
-U 1 1 5E46EEE2
-P 2468 5889
-F 0 "10Kr4" V 2772 5977 50  0000 L CNN
-F 1 "ROX5SSJ1K8" V 2863 5977 50  0001 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 3018 5939 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/ROX5SSJ1K8.pdf" H 3018 5839 50  0001 L CNN
-F 4 "TE Connectivity 1.8k 5W Metal Oxide Resistor +/-5% +/-350ppm/C ROX5SSJ1K8" H 3018 5739 50  0001 L CNN "Description"
-F 5 "" H 3018 5639 50  0001 L CNN "Height"
-F 6 "279-ROX5SSJ1K8" H 3018 5539 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=279-ROX5SSJ1K8" H 3018 5439 50  0001 L CNN "Mouser Price/Stock"
-F 8 "TE Connectivity" H 3018 5339 50  0001 L CNN "Manufacturer_Name"
-F 9 "ROX5SSJ1K8" H 3018 5239 50  0001 L CNN "Manufacturer_Part_Number"
-	1    2468 5889
-	0    1    -1   0   
-$EndComp
-Text GLabel 2469 4266 1    50   Input ~ 0
-Enable
-Wire Wire Line
-	2468 4266 2469 4266
-Wire Wire Line
-	1189 4731 1075 4731
-Wire Wire Line
-	1189 4731 1468 4731
-Connection ~ 1189 4731
-$Comp
-L estop-rescue:ROX5SSJ1K8-USBhUB 10Kr2
-U 1 1 5E46EEF3
-P 1189 4731
-F 0 "10Kr2" V 1493 4819 50  0000 L CNN
-F 1 "ROX5SSJ1K8" V 1584 4819 50  0001 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 1739 4781 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/ROX5SSJ1K8.pdf" H 1739 4681 50  0001 L CNN
-F 4 "TE Connectivity 1.8k 5W Metal Oxide Resistor +/-5% +/-350ppm/C ROX5SSJ1K8" H 1739 4581 50  0001 L CNN "Description"
-F 5 "" H 1739 4481 50  0001 L CNN "Height"
-F 6 "279-ROX5SSJ1K8" H 1739 4381 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=279-ROX5SSJ1K8" H 1739 4281 50  0001 L CNN "Mouser Price/Stock"
-F 8 "TE Connectivity" H 1739 4181 50  0001 L CNN "Manufacturer_Name"
-F 9 "ROX5SSJ1K8" H 1739 4081 50  0001 L CNN "Manufacturer_Part_Number"
-	1    1189 4731
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1191 5434 1191 5429
-Text GLabel 2769 5166 2    50   Input ~ 0
-Output3
-Wire Wire Line
-	2468 5166 2769 5166
-Connection ~ 2468 5166
-Wire Wire Line
-	2468 5166 2468 5189
-Wire Wire Line
-	2468 4266 2468 4530
-$Comp
-L Transistor_FET:IRF9540N Q3
-U 1 1 5E46EEFF
-P 2368 4730
-F 0 "Q3" H 2572 4684 50  0000 L CNN
-F 1 "IRF9530N" H 2572 4775 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 2568 4655 50  0001 L CIN
-F 3 "http://www.vishay.com/docs/91076/sihf9530.pdf" H 2368 4730 50  0001 L CNN
-	1    2368 4730
-	1    0    0    1   
-$EndComp
-Connection ~ 2468 4530
-Wire Wire Line
-	2468 4530 2468 4532
-Wire Wire Line
-	2468 4931 2469 4931
-Wire Wire Line
-	2468 4930 2468 4931
-Connection ~ 2468 4931
-Wire Wire Line
-	2468 4931 2468 5166
-Text GLabel 3539 4510 0    50   Input ~ 0
-Input4
-$Comp
-L power:VCC #PWR03
-U 1 1 5E4711DD
-P 3653 5211
-F 0 "#PWR03" H 3653 5061 50  0001 C CNN
-F 1 "VCC" H 3671 5384 50  0000 C CNN
-F 2 "" H 3653 5211 50  0001 C CNN
-F 3 "" H 3653 5211 50  0001 C CNN
-	1    3653 5211
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	3539 4511 3539 4510
-Wire Wire Line
-	3653 4498 3653 4510
-$Comp
-L estop-rescue:ROX5SSJ1K8-USBhUB 1Kr3
-U 1 1 5E4711EB
-P 3932 4511
-F 0 "1Kr3" V 4236 4599 50  0000 L CNN
-F 1 "ROX5SSJ1K8" V 4327 4599 50  0001 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 4482 4561 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/ROX5SSJ1K8.pdf" H 4482 4461 50  0001 L CNN
-F 4 "TE Connectivity 1.8k 5W Metal Oxide Resistor +/-5% +/-350ppm/C ROX5SSJ1K8" H 4482 4361 50  0001 L CNN "Description"
-F 5 "" H 4482 4261 50  0001 L CNN "Height"
-F 6 "279-ROX5SSJ1K8" H 4482 4161 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=279-ROX5SSJ1K8" H 4482 4061 50  0001 L CNN "Mouser Price/Stock"
-F 8 "TE Connectivity" H 4482 3961 50  0001 L CNN "Manufacturer_Name"
-F 9 "ROX5SSJ1K8" H 4482 3861 50  0001 L CNN "Manufacturer_Part_Number"
-	1    3932 4511
-	1    0    0    1   
-$EndComp
-$Comp
-L estop-rescue:GND-Adafruit_Feather_M0_RFMxx-eagle-import #GND03
-U 1 1 5E4711F1
-P 4932 5769
-F 0 "#GND03" H 4932 5769 50  0001 C CNN
-F 1 "GND" H 4932 5648 59  0000 C CNN
-F 2 "" H 4932 5769 50  0001 C CNN
-F 3 "" H 4932 5769 50  0001 C CNN
-	1    4932 5769
-	-1   0    0    -1  
-$EndComp
-Connection ~ 3932 4511
-Wire Wire Line
-	3932 4511 3933 4511
-$Comp
-L estop-rescue:ROX5SSJ1K8-USBhUB 10Kr7
-U 1 1 5E4711FF
-P 4932 5669
-F 0 "10Kr7" V 5236 5757 50  0000 L CNN
-F 1 "ROX5SSJ1K8" V 5327 5757 50  0001 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 5482 5719 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/ROX5SSJ1K8.pdf" H 5482 5619 50  0001 L CNN
-F 4 "TE Connectivity 1.8k 5W Metal Oxide Resistor +/-5% +/-350ppm/C ROX5SSJ1K8" H 5482 5519 50  0001 L CNN "Description"
-F 5 "" H 5482 5419 50  0001 L CNN "Height"
-F 6 "279-ROX5SSJ1K8" H 5482 5319 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=279-ROX5SSJ1K8" H 5482 5219 50  0001 L CNN "Mouser Price/Stock"
-F 8 "TE Connectivity" H 5482 5119 50  0001 L CNN "Manufacturer_Name"
-F 9 "ROX5SSJ1K8" H 5482 5019 50  0001 L CNN "Manufacturer_Part_Number"
-	1    4932 5669
-	0    1    -1   0   
-$EndComp
-Text GLabel 4933 4046 1    50   Input ~ 0
-Enable
-Wire Wire Line
-	4932 4046 4933 4046
-Wire Wire Line
-	3653 4511 3539 4511
-Wire Wire Line
-	3653 4511 3932 4511
-Connection ~ 3653 4511
-$Comp
-L estop-rescue:ROX5SSJ1K8-USBhUB 10Kr5
-U 1 1 5E471210
-P 3653 4511
-F 0 "10Kr5" V 3957 4599 50  0000 L CNN
-F 1 "ROX5SSJ1K8" V 4048 4599 50  0001 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 4203 4561 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/ROX5SSJ1K8.pdf" H 4203 4461 50  0001 L CNN
-F 4 "TE Connectivity 1.8k 5W Metal Oxide Resistor +/-5% +/-350ppm/C ROX5SSJ1K8" H 4203 4361 50  0001 L CNN "Description"
-F 5 "" H 4203 4261 50  0001 L CNN "Height"
-F 6 "279-ROX5SSJ1K8" H 4203 4161 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=279-ROX5SSJ1K8" H 4203 4061 50  0001 L CNN "Mouser Price/Stock"
-F 8 "TE Connectivity" H 4203 3961 50  0001 L CNN "Manufacturer_Name"
-F 9 "ROX5SSJ1K8" H 4203 3861 50  0001 L CNN "Manufacturer_Part_Number"
-	1    3653 4511
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3655 5214 3655 5209
-Text GLabel 5233 4946 2    50   Input ~ 0
-Output4
-Wire Wire Line
-	4932 4946 5233 4946
-Connection ~ 4932 4946
-Wire Wire Line
-	4932 4946 4932 4969
-Wire Wire Line
-	4932 4046 4932 4310
-$Comp
-L Transistor_FET:IRF9540N Q4
-U 1 1 5E47121C
-P 4832 4510
-F 0 "Q4" H 5036 4464 50  0000 L CNN
-F 1 "IRF9530N" H 5036 4555 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 5032 4435 50  0001 L CIN
-F 3 "http://www.vishay.com/docs/91076/sihf9530.pdf" H 4832 4510 50  0001 L CNN
-	1    4832 4510
-	1    0    0    1   
-$EndComp
-Connection ~ 4932 4310
-Wire Wire Line
-	4932 4310 4932 4312
-Wire Wire Line
-	4932 4711 4933 4711
-Wire Wire Line
-	4932 4710 4932 4711
-Connection ~ 4932 4711
-Wire Wire Line
-	4932 4711 4932 4946
 Wire Wire Line
 	2150 2177 2151 2177
 Wire Wire Line
@@ -657,4 +264,416 @@ Wire Wire Line
 Wire Wire Line
 	2150 2176 2149 2176
 Connection ~ 2150 2176
+$Comp
+L estop-rescue:ROX5SSJ1K8-USBhUB r1
+U 1 1 5E4308DE
+P 1293 2176
+F 0 "r1" V 1597 2264 50  0000 L CNN
+F 1 "10k" V 1688 2264 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 1843 2226 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/ROX5SSJ1K8.pdf" H 1843 2126 50  0001 L CNN
+F 4 "TE Connectivity 1.8k 5W Metal Oxide Resistor +/-5% +/-350ppm/C ROX5SSJ1K8" H 1843 2026 50  0001 L CNN "Description"
+F 5 "" H 1843 1926 50  0001 L CNN "Height"
+F 6 "279-ROX5SSJ1K8" H 1843 1826 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=279-ROX5SSJ1K8" H 1843 1726 50  0001 L CNN "Mouser Price/Stock"
+F 8 "TE Connectivity" H 1843 1626 50  0001 L CNN "Manufacturer_Name"
+F 9 "ROX5SSJ1K8" H 1843 1526 50  0001 L CNN "Manufacturer_Part_Number"
+	1    1293 2176
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1057 2176 1293 2176
+Connection ~ 1293 2176
+Wire Wire Line
+	1293 2176 1450 2176
+Text GLabel 3646 2258 0    50   Input ~ 0
+Input2
+$Comp
+L power:VCC #PWR02
+U 1 1 5E48F012
+P 3882 2959
+F 0 "#PWR02" H 3882 2809 50  0001 C CNN
+F 1 "VCC" H 3900 3132 50  0000 C CNN
+F 2 "" H 3882 2959 50  0001 C CNN
+F 3 "" H 3882 2959 50  0001 C CNN
+	1    3882 2959
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3646 2259 3646 2258
+Wire Wire Line
+	3760 2246 3760 2258
+$Comp
+L estop-rescue:ROX5SSJ1K8-USBhUB r4
+U 1 1 5E48F020
+P 4039 2259
+F 0 "r4" V 4343 2347 50  0000 L CNN
+F 1 "1k" V 4434 2347 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 4589 2309 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/ROX5SSJ1K8.pdf" H 4589 2209 50  0001 L CNN
+F 4 "TE Connectivity 1.8k 5W Metal Oxide Resistor +/-5% +/-350ppm/C ROX5SSJ1K8" H 4589 2109 50  0001 L CNN "Description"
+F 5 "" H 4589 2009 50  0001 L CNN "Height"
+F 6 "279-ROX5SSJ1K8" H 4589 1909 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=279-ROX5SSJ1K8" H 4589 1809 50  0001 L CNN "Mouser Price/Stock"
+F 8 "TE Connectivity" H 4589 1709 50  0001 L CNN "Manufacturer_Name"
+F 9 "ROX5SSJ1K8" H 4589 1609 50  0001 L CNN "Manufacturer_Part_Number"
+	1    4039 2259
+	1    0    0    1   
+$EndComp
+$Comp
+L estop-rescue:GND-Adafruit_Feather_M0_RFMxx-eagle-import #GND02
+U 1 1 5E48F026
+P 5039 3517
+F 0 "#GND02" H 5039 3517 50  0001 C CNN
+F 1 "GND" H 5039 3396 59  0000 C CNN
+F 2 "" H 5039 3517 50  0001 C CNN
+F 3 "" H 5039 3517 50  0001 C CNN
+	1    5039 3517
+	-1   0    0    -1  
+$EndComp
+Connection ~ 4039 2259
+Wire Wire Line
+	4039 2259 4040 2259
+$Comp
+L estop-rescue:ROX5SSJ1K8-USBhUB r6
+U 1 1 5E48F034
+P 5039 3417
+F 0 "r6" V 5343 3505 50  0000 L CNN
+F 1 "10k" V 5434 3505 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 5589 3467 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/ROX5SSJ1K8.pdf" H 5589 3367 50  0001 L CNN
+F 4 "TE Connectivity 1.8k 5W Metal Oxide Resistor +/-5% +/-350ppm/C ROX5SSJ1K8" H 5589 3267 50  0001 L CNN "Description"
+F 5 "" H 5589 3167 50  0001 L CNN "Height"
+F 6 "279-ROX5SSJ1K8" H 5589 3067 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=279-ROX5SSJ1K8" H 5589 2967 50  0001 L CNN "Mouser Price/Stock"
+F 8 "TE Connectivity" H 5589 2867 50  0001 L CNN "Manufacturer_Name"
+F 9 "ROX5SSJ1K8" H 5589 2767 50  0001 L CNN "Manufacturer_Part_Number"
+	1    5039 3417
+	0    1    -1   0   
+$EndComp
+Text GLabel 5040 1794 1    50   Input ~ 0
+Enable
+Wire Wire Line
+	5039 1794 5040 1794
+Text GLabel 5340 2694 2    50   Input ~ 0
+Output2
+Wire Wire Line
+	5039 2694 5340 2694
+Connection ~ 5039 2694
+Wire Wire Line
+	5039 2694 5039 2717
+Wire Wire Line
+	5039 1794 5039 2058
+$Comp
+L Transistor_FET:IRF9540N Q2
+U 1 1 5E48F041
+P 4939 2258
+F 0 "Q2" H 5143 2212 50  0000 L CNN
+F 1 "IRF9530N" H 5143 2303 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 5139 2183 50  0001 L CIN
+F 3 "http://www.vishay.com/docs/91076/sihf9530.pdf" H 4939 2258 50  0001 L CNN
+	1    4939 2258
+	1    0    0    1   
+$EndComp
+Connection ~ 5039 2058
+Wire Wire Line
+	5039 2058 5039 2060
+Wire Wire Line
+	5039 2459 5040 2459
+Wire Wire Line
+	5039 2458 5039 2459
+Connection ~ 5039 2459
+Wire Wire Line
+	5039 2459 5039 2694
+Wire Wire Line
+	4739 2260 4740 2260
+Wire Wire Line
+	4740 2260 4740 2258
+Wire Wire Line
+	4739 2258 4739 2259
+Wire Wire Line
+	4739 2259 4738 2259
+Connection ~ 4739 2259
+$Comp
+L estop-rescue:ROX5SSJ1K8-USBhUB r3
+U 1 1 5E48F058
+P 3882 2259
+F 0 "r3" V 4186 2347 50  0000 L CNN
+F 1 "10k" V 4277 2347 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 4432 2309 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/ROX5SSJ1K8.pdf" H 4432 2209 50  0001 L CNN
+F 4 "TE Connectivity 1.8k 5W Metal Oxide Resistor +/-5% +/-350ppm/C ROX5SSJ1K8" H 4432 2109 50  0001 L CNN "Description"
+F 5 "" H 4432 2009 50  0001 L CNN "Height"
+F 6 "279-ROX5SSJ1K8" H 4432 1909 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=279-ROX5SSJ1K8" H 4432 1809 50  0001 L CNN "Mouser Price/Stock"
+F 8 "TE Connectivity" H 4432 1709 50  0001 L CNN "Manufacturer_Name"
+F 9 "ROX5SSJ1K8" H 4432 1609 50  0001 L CNN "Manufacturer_Part_Number"
+	1    3882 2259
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3646 2259 3882 2259
+Connection ~ 3882 2259
+Wire Wire Line
+	3882 2259 4039 2259
+Text GLabel 982  4922 0    50   Input ~ 0
+Input3
+$Comp
+L power:VCC #PWR04
+U 1 1 5E491333
+P 1218 5623
+F 0 "#PWR04" H 1218 5473 50  0001 C CNN
+F 1 "VCC" H 1236 5796 50  0000 C CNN
+F 2 "" H 1218 5623 50  0001 C CNN
+F 3 "" H 1218 5623 50  0001 C CNN
+	1    1218 5623
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	982  4923 982  4922
+Wire Wire Line
+	1096 4910 1096 4922
+$Comp
+L estop-rescue:ROX5SSJ1K8-USBhUB r10
+U 1 1 5E491341
+P 1375 4923
+F 0 "r10" V 1679 5011 50  0000 L CNN
+F 1 "1k" V 1770 5011 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 1925 4973 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/ROX5SSJ1K8.pdf" H 1925 4873 50  0001 L CNN
+F 4 "TE Connectivity 1.8k 5W Metal Oxide Resistor +/-5% +/-350ppm/C ROX5SSJ1K8" H 1925 4773 50  0001 L CNN "Description"
+F 5 "" H 1925 4673 50  0001 L CNN "Height"
+F 6 "279-ROX5SSJ1K8" H 1925 4573 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=279-ROX5SSJ1K8" H 1925 4473 50  0001 L CNN "Mouser Price/Stock"
+F 8 "TE Connectivity" H 1925 4373 50  0001 L CNN "Manufacturer_Name"
+F 9 "ROX5SSJ1K8" H 1925 4273 50  0001 L CNN "Manufacturer_Part_Number"
+	1    1375 4923
+	1    0    0    1   
+$EndComp
+$Comp
+L estop-rescue:GND-Adafruit_Feather_M0_RFMxx-eagle-import #GND05
+U 1 1 5E491347
+P 2375 6181
+F 0 "#GND05" H 2375 6181 50  0001 C CNN
+F 1 "GND" H 2375 6060 59  0000 C CNN
+F 2 "" H 2375 6181 50  0001 C CNN
+F 3 "" H 2375 6181 50  0001 C CNN
+	1    2375 6181
+	-1   0    0    -1  
+$EndComp
+Connection ~ 1375 4923
+Wire Wire Line
+	1375 4923 1376 4923
+$Comp
+L estop-rescue:ROX5SSJ1K8-USBhUB r12
+U 1 1 5E491355
+P 2375 6081
+F 0 "r12" V 2679 6169 50  0000 L CNN
+F 1 "10k" V 2770 6169 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 2925 6131 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/ROX5SSJ1K8.pdf" H 2925 6031 50  0001 L CNN
+F 4 "TE Connectivity 1.8k 5W Metal Oxide Resistor +/-5% +/-350ppm/C ROX5SSJ1K8" H 2925 5931 50  0001 L CNN "Description"
+F 5 "" H 2925 5831 50  0001 L CNN "Height"
+F 6 "279-ROX5SSJ1K8" H 2925 5731 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=279-ROX5SSJ1K8" H 2925 5631 50  0001 L CNN "Mouser Price/Stock"
+F 8 "TE Connectivity" H 2925 5531 50  0001 L CNN "Manufacturer_Name"
+F 9 "ROX5SSJ1K8" H 2925 5431 50  0001 L CNN "Manufacturer_Part_Number"
+	1    2375 6081
+	0    1    -1   0   
+$EndComp
+Text GLabel 2376 4458 1    50   Input ~ 0
+Enable
+Wire Wire Line
+	2375 4458 2376 4458
+Text GLabel 2676 5358 2    50   Input ~ 0
+Output3
+Wire Wire Line
+	2375 5358 2676 5358
+Connection ~ 2375 5358
+Wire Wire Line
+	2375 5358 2375 5381
+Wire Wire Line
+	2375 4458 2375 4722
+$Comp
+L Transistor_FET:IRF9540N Q4
+U 1 1 5E491362
+P 2275 4922
+F 0 "Q4" H 2479 4876 50  0000 L CNN
+F 1 "IRF9530N" H 2479 4967 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 2475 4847 50  0001 L CIN
+F 3 "http://www.vishay.com/docs/91076/sihf9530.pdf" H 2275 4922 50  0001 L CNN
+	1    2275 4922
+	1    0    0    1   
+$EndComp
+Connection ~ 2375 4722
+Wire Wire Line
+	2375 4722 2375 4724
+Wire Wire Line
+	2375 5123 2376 5123
+Wire Wire Line
+	2375 5122 2375 5123
+Connection ~ 2375 5123
+Wire Wire Line
+	2375 5123 2375 5358
+Wire Wire Line
+	2075 4924 2076 4924
+Wire Wire Line
+	2076 4924 2076 4922
+Wire Wire Line
+	2075 4922 2075 4923
+Wire Wire Line
+	2075 4923 2074 4923
+Connection ~ 2075 4923
+$Comp
+L estop-rescue:ROX5SSJ1K8-USBhUB r9
+U 1 1 5E491379
+P 1218 4923
+F 0 "r9" V 1522 5011 50  0000 L CNN
+F 1 "10k" V 1613 5011 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 1768 4973 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/ROX5SSJ1K8.pdf" H 1768 4873 50  0001 L CNN
+F 4 "TE Connectivity 1.8k 5W Metal Oxide Resistor +/-5% +/-350ppm/C ROX5SSJ1K8" H 1768 4773 50  0001 L CNN "Description"
+F 5 "" H 1768 4673 50  0001 L CNN "Height"
+F 6 "279-ROX5SSJ1K8" H 1768 4573 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=279-ROX5SSJ1K8" H 1768 4473 50  0001 L CNN "Mouser Price/Stock"
+F 8 "TE Connectivity" H 1768 4373 50  0001 L CNN "Manufacturer_Name"
+F 9 "ROX5SSJ1K8" H 1768 4273 50  0001 L CNN "Manufacturer_Part_Number"
+	1    1218 4923
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	982  4923 1218 4923
+Connection ~ 1218 4923
+Wire Wire Line
+	1218 4923 1375 4923
+Text GLabel 3770 4913 0    50   Input ~ 0
+Input4
+$Comp
+L power:VCC #PWR03
+U 1 1 5E492F6C
+P 4006 5614
+F 0 "#PWR03" H 4006 5464 50  0001 C CNN
+F 1 "VCC" H 4024 5787 50  0000 C CNN
+F 2 "" H 4006 5614 50  0001 C CNN
+F 3 "" H 4006 5614 50  0001 C CNN
+	1    4006 5614
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3770 4914 3770 4913
+Wire Wire Line
+	3884 4901 3884 4913
+$Comp
+L estop-rescue:ROX5SSJ1K8-USBhUB r8
+U 1 1 5E492F7A
+P 4163 4914
+F 0 "r8" V 4467 5002 50  0000 L CNN
+F 1 "1k" V 4558 5002 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 4713 4964 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/ROX5SSJ1K8.pdf" H 4713 4864 50  0001 L CNN
+F 4 "TE Connectivity 1.8k 5W Metal Oxide Resistor +/-5% +/-350ppm/C ROX5SSJ1K8" H 4713 4764 50  0001 L CNN "Description"
+F 5 "" H 4713 4664 50  0001 L CNN "Height"
+F 6 "279-ROX5SSJ1K8" H 4713 4564 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=279-ROX5SSJ1K8" H 4713 4464 50  0001 L CNN "Mouser Price/Stock"
+F 8 "TE Connectivity" H 4713 4364 50  0001 L CNN "Manufacturer_Name"
+F 9 "ROX5SSJ1K8" H 4713 4264 50  0001 L CNN "Manufacturer_Part_Number"
+	1    4163 4914
+	1    0    0    1   
+$EndComp
+$Comp
+L estop-rescue:GND-Adafruit_Feather_M0_RFMxx-eagle-import #GND04
+U 1 1 5E492F80
+P 5163 6172
+F 0 "#GND04" H 5163 6172 50  0001 C CNN
+F 1 "GND" H 5163 6051 59  0000 C CNN
+F 2 "" H 5163 6172 50  0001 C CNN
+F 3 "" H 5163 6172 50  0001 C CNN
+	1    5163 6172
+	-1   0    0    -1  
+$EndComp
+Connection ~ 4163 4914
+Wire Wire Line
+	4163 4914 4164 4914
+$Comp
+L estop-rescue:ROX5SSJ1K8-USBhUB r11
+U 1 1 5E492F8E
+P 5163 6072
+F 0 "r11" V 5467 6160 50  0000 L CNN
+F 1 "10k" V 5558 6160 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 5713 6122 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/ROX5SSJ1K8.pdf" H 5713 6022 50  0001 L CNN
+F 4 "TE Connectivity 1.8k 5W Metal Oxide Resistor +/-5% +/-350ppm/C ROX5SSJ1K8" H 5713 5922 50  0001 L CNN "Description"
+F 5 "" H 5713 5822 50  0001 L CNN "Height"
+F 6 "279-ROX5SSJ1K8" H 5713 5722 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=279-ROX5SSJ1K8" H 5713 5622 50  0001 L CNN "Mouser Price/Stock"
+F 8 "TE Connectivity" H 5713 5522 50  0001 L CNN "Manufacturer_Name"
+F 9 "ROX5SSJ1K8" H 5713 5422 50  0001 L CNN "Manufacturer_Part_Number"
+	1    5163 6072
+	0    1    -1   0   
+$EndComp
+Text GLabel 5164 4449 1    50   Input ~ 0
+Enable
+Wire Wire Line
+	5163 4449 5164 4449
+Text GLabel 5464 5349 2    50   Input ~ 0
+Output4
+Wire Wire Line
+	5163 5349 5464 5349
+Connection ~ 5163 5349
+Wire Wire Line
+	5163 5349 5163 5372
+Wire Wire Line
+	5163 4449 5163 4713
+$Comp
+L Transistor_FET:IRF9540N Q3
+U 1 1 5E492F9B
+P 5063 4913
+F 0 "Q3" H 5267 4867 50  0000 L CNN
+F 1 "IRF9530N" H 5267 4958 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 5263 4838 50  0001 L CIN
+F 3 "http://www.vishay.com/docs/91076/sihf9530.pdf" H 5063 4913 50  0001 L CNN
+	1    5063 4913
+	1    0    0    1   
+$EndComp
+Connection ~ 5163 4713
+Wire Wire Line
+	5163 4713 5163 4715
+Wire Wire Line
+	5163 5114 5164 5114
+Wire Wire Line
+	5163 5113 5163 5114
+Connection ~ 5163 5114
+Wire Wire Line
+	5163 5114 5163 5349
+Wire Wire Line
+	4863 4915 4864 4915
+Wire Wire Line
+	4864 4915 4864 4913
+Wire Wire Line
+	4863 4913 4863 4914
+Wire Wire Line
+	4863 4914 4862 4914
+Connection ~ 4863 4914
+$Comp
+L estop-rescue:ROX5SSJ1K8-USBhUB r7
+U 1 1 5E492FB2
+P 4006 4914
+F 0 "r7" V 4310 5002 50  0000 L CNN
+F 1 "10k" V 4401 5002 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 4556 4964 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/ROX5SSJ1K8.pdf" H 4556 4864 50  0001 L CNN
+F 4 "TE Connectivity 1.8k 5W Metal Oxide Resistor +/-5% +/-350ppm/C ROX5SSJ1K8" H 4556 4764 50  0001 L CNN "Description"
+F 5 "" H 4556 4664 50  0001 L CNN "Height"
+F 6 "279-ROX5SSJ1K8" H 4556 4564 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=279-ROX5SSJ1K8" H 4556 4464 50  0001 L CNN "Mouser Price/Stock"
+F 8 "TE Connectivity" H 4556 4364 50  0001 L CNN "Manufacturer_Name"
+F 9 "ROX5SSJ1K8" H 4556 4264 50  0001 L CNN "Manufacturer_Part_Number"
+	1    4006 4914
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3770 4914 4006 4914
+Connection ~ 4006 4914
+Wire Wire Line
+	4006 4914 4163 4914
 $EndSCHEMATC

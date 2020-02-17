@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 1
 Title "Estop"
 Date ""
-Rev "V3"
+Rev "Rev 3"
 Comp "Tyler Julian (Sooner Competitive Robotics)"
 Comment1 ""
 Comment2 ""
@@ -25,10 +25,10 @@ F 3 "" H 7445 5950 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L estop-rescue:GND-Adafruit_Feather_M0_RFMxx-eagle-import #GND05
+L estop-rescue:GND-Adafruit_Feather_M0_RFMxx-eagle-import #GND03
 U 1 1 5DE79EBA
 P 7345 5750
-F 0 "#GND05" H 7345 5750 50  0001 C CNN
+F 0 "#GND03" H 7345 5750 50  0001 C CNN
 F 1 "GND" V 7345 5681 59  0000 R CNN
 F 2 "" H 7345 5750 50  0001 C CNN
 F 3 "" H 7345 5750 50  0001 C CNN
@@ -174,11 +174,11 @@ Wire Wire Line
 Wire Wire Line
 	1171 2163 1171 2175
 $Comp
-L estop-rescue:ROX5SSJ1K8-USBhUB 1Kr1
+L estop-rescue:ROX5SSJ1K8-USBhUB r2
 U 1 1 5E4308F5
 P 1450 2176
-F 0 "1Kr1" V 1754 2264 50  0000 L CNN
-F 1 "ROX5SSJ1K8" V 1845 2264 50  0001 L CNN
+F 0 "r2" V 1754 2264 50  0000 L CNN
+F 1 "1k" V 1845 2264 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 2000 2226 50  0001 L CNN
 F 3 "https://componentsearchengine.com/Datasheets/1/ROX5SSJ1K8.pdf" H 2000 2126 50  0001 L CNN
 F 4 "TE Connectivity 1.8k 5W Metal Oxide Resistor +/-5% +/-350ppm/C ROX5SSJ1K8" H 2000 2026 50  0001 L CNN "Description"
@@ -205,11 +205,11 @@ Connection ~ 1450 2176
 Wire Wire Line
 	1450 2176 1451 2176
 $Comp
-L estop-rescue:ROX5SSJ1K8-USBhUB 10Kr3
+L estop-rescue:ROX5SSJ1K8-USBhUB r5
 U 1 1 5DE69959
 P 2450 3334
-F 0 "10Kr3" V 2754 3422 50  0000 L CNN
-F 1 "ROX5SSJ1K8" V 2845 3422 50  0001 L CNN
+F 0 "r5" V 2754 3422 50  0000 L CNN
+F 1 "10k" V 2845 3422 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 3000 3384 50  0001 L CNN
 F 3 "https://componentsearchengine.com/Datasheets/1/ROX5SSJ1K8.pdf" H 3000 3284 50  0001 L CNN
 F 4 "TE Connectivity 1.8k 5W Metal Oxide Resistor +/-5% +/-350ppm/C ROX5SSJ1K8" H 3000 3184 50  0001 L CNN "Description"
@@ -265,11 +265,11 @@ Wire Wire Line
 	2150 2176 2149 2176
 Connection ~ 2150 2176
 $Comp
-L estop-rescue:ROX5SSJ1K8-USBhUB 10Kr1
+L estop-rescue:ROX5SSJ1K8-USBhUB r1
 U 1 1 5E4308DE
 P 1293 2176
-F 0 "10Kr1" V 1597 2264 50  0000 L CNN
-F 1 "ROX5SSJ1K8" V 1688 2264 50  0001 L CNN
+F 0 "r1" V 1597 2264 50  0000 L CNN
+F 1 "10k" V 1688 2264 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 1843 2226 50  0001 L CNN
 F 3 "https://componentsearchengine.com/Datasheets/1/ROX5SSJ1K8.pdf" H 1843 2126 50  0001 L CNN
 F 4 "TE Connectivity 1.8k 5W Metal Oxide Resistor +/-5% +/-350ppm/C ROX5SSJ1K8" H 1843 2026 50  0001 L CNN "Description"
@@ -289,10 +289,10 @@ Wire Wire Line
 Text GLabel 3646 2258 0    50   Input ~ 0
 Input2
 $Comp
-L power:VCC #PWR03
+L power:VCC #PWR02
 U 1 1 5E48F012
 P 3882 2959
-F 0 "#PWR03" H 3882 2809 50  0001 C CNN
+F 0 "#PWR02" H 3882 2809 50  0001 C CNN
 F 1 "VCC" H 3900 3132 50  0000 C CNN
 F 2 "" H 3882 2959 50  0001 C CNN
 F 3 "" H 3882 2959 50  0001 C CNN
@@ -304,11 +304,11 @@ Wire Wire Line
 Wire Wire Line
 	3760 2246 3760 2258
 $Comp
-L estop-rescue:ROX5SSJ1K8-USBhUB 1Kr3
+L estop-rescue:ROX5SSJ1K8-USBhUB r4
 U 1 1 5E48F020
 P 4039 2259
-F 0 "1Kr3" V 4343 2347 50  0000 L CNN
-F 1 "ROX5SSJ1K8" V 4434 2347 50  0001 L CNN
+F 0 "r4" V 4343 2347 50  0000 L CNN
+F 1 "1k" V 4434 2347 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 4589 2309 50  0001 L CNN
 F 3 "https://componentsearchengine.com/Datasheets/1/ROX5SSJ1K8.pdf" H 4589 2209 50  0001 L CNN
 F 4 "TE Connectivity 1.8k 5W Metal Oxide Resistor +/-5% +/-350ppm/C ROX5SSJ1K8" H 4589 2109 50  0001 L CNN "Description"
@@ -321,10 +321,10 @@ F 9 "ROX5SSJ1K8" H 4589 1609 50  0001 L CNN "Manufacturer_Part_Number"
 	1    0    0    1   
 $EndComp
 $Comp
-L estop-rescue:GND-Adafruit_Feather_M0_RFMxx-eagle-import #GND03
+L estop-rescue:GND-Adafruit_Feather_M0_RFMxx-eagle-import #GND02
 U 1 1 5E48F026
 P 5039 3517
-F 0 "#GND03" H 5039 3517 50  0001 C CNN
+F 0 "#GND02" H 5039 3517 50  0001 C CNN
 F 1 "GND" H 5039 3396 59  0000 C CNN
 F 2 "" H 5039 3517 50  0001 C CNN
 F 3 "" H 5039 3517 50  0001 C CNN
@@ -335,11 +335,11 @@ Connection ~ 4039 2259
 Wire Wire Line
 	4039 2259 4040 2259
 $Comp
-L estop-rescue:ROX5SSJ1K8-USBhUB 10Kr7
+L estop-rescue:ROX5SSJ1K8-USBhUB r6
 U 1 1 5E48F034
 P 5039 3417
-F 0 "10Kr7" V 5343 3505 50  0000 L CNN
-F 1 "ROX5SSJ1K8" V 5434 3505 50  0001 L CNN
+F 0 "r6" V 5343 3505 50  0000 L CNN
+F 1 "10k" V 5434 3505 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 5589 3467 50  0001 L CNN
 F 3 "https://componentsearchengine.com/Datasheets/1/ROX5SSJ1K8.pdf" H 5589 3367 50  0001 L CNN
 F 4 "TE Connectivity 1.8k 5W Metal Oxide Resistor +/-5% +/-350ppm/C ROX5SSJ1K8" H 5589 3267 50  0001 L CNN "Description"
@@ -365,10 +365,10 @@ Wire Wire Line
 Wire Wire Line
 	5039 1794 5039 2058
 $Comp
-L Transistor_FET:IRF9540N Q3
+L Transistor_FET:IRF9540N Q2
 U 1 1 5E48F041
 P 4939 2258
-F 0 "Q3" H 5143 2212 50  0000 L CNN
+F 0 "Q2" H 5143 2212 50  0000 L CNN
 F 1 "IRF9530N" H 5143 2303 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 5139 2183 50  0001 L CIN
 F 3 "http://www.vishay.com/docs/91076/sihf9530.pdf" H 4939 2258 50  0001 L CNN
@@ -395,11 +395,11 @@ Wire Wire Line
 	4739 2259 4738 2259
 Connection ~ 4739 2259
 $Comp
-L estop-rescue:ROX5SSJ1K8-USBhUB 10Kr5
+L estop-rescue:ROX5SSJ1K8-USBhUB r3
 U 1 1 5E48F058
 P 3882 2259
-F 0 "10Kr5" V 4186 2347 50  0000 L CNN
-F 1 "ROX5SSJ1K8" V 4277 2347 50  0001 L CNN
+F 0 "r3" V 4186 2347 50  0000 L CNN
+F 1 "10k" V 4277 2347 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 4432 2309 50  0001 L CNN
 F 3 "https://componentsearchengine.com/Datasheets/1/ROX5SSJ1K8.pdf" H 4432 2209 50  0001 L CNN
 F 4 "TE Connectivity 1.8k 5W Metal Oxide Resistor +/-5% +/-350ppm/C ROX5SSJ1K8" H 4432 2109 50  0001 L CNN "Description"
@@ -419,10 +419,10 @@ Wire Wire Line
 Text GLabel 982  4922 0    50   Input ~ 0
 Input3
 $Comp
-L power:VCC #PWR02
+L power:VCC #PWR04
 U 1 1 5E491333
 P 1218 5623
-F 0 "#PWR02" H 1218 5473 50  0001 C CNN
+F 0 "#PWR04" H 1218 5473 50  0001 C CNN
 F 1 "VCC" H 1236 5796 50  0000 C CNN
 F 2 "" H 1218 5623 50  0001 C CNN
 F 3 "" H 1218 5623 50  0001 C CNN
@@ -434,11 +434,11 @@ Wire Wire Line
 Wire Wire Line
 	1096 4910 1096 4922
 $Comp
-L estop-rescue:ROX5SSJ1K8-USBhUB 1Kr2
+L estop-rescue:ROX5SSJ1K8-USBhUB r10
 U 1 1 5E491341
 P 1375 4923
-F 0 "1Kr2" V 1679 5011 50  0000 L CNN
-F 1 "ROX5SSJ1K8" V 1770 5011 50  0001 L CNN
+F 0 "r10" V 1679 5011 50  0000 L CNN
+F 1 "1k" V 1770 5011 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 1925 4973 50  0001 L CNN
 F 3 "https://componentsearchengine.com/Datasheets/1/ROX5SSJ1K8.pdf" H 1925 4873 50  0001 L CNN
 F 4 "TE Connectivity 1.8k 5W Metal Oxide Resistor +/-5% +/-350ppm/C ROX5SSJ1K8" H 1925 4773 50  0001 L CNN "Description"
@@ -451,10 +451,10 @@ F 9 "ROX5SSJ1K8" H 1925 4273 50  0001 L CNN "Manufacturer_Part_Number"
 	1    0    0    1   
 $EndComp
 $Comp
-L estop-rescue:GND-Adafruit_Feather_M0_RFMxx-eagle-import #GND02
+L estop-rescue:GND-Adafruit_Feather_M0_RFMxx-eagle-import #GND05
 U 1 1 5E491347
 P 2375 6181
-F 0 "#GND02" H 2375 6181 50  0001 C CNN
+F 0 "#GND05" H 2375 6181 50  0001 C CNN
 F 1 "GND" H 2375 6060 59  0000 C CNN
 F 2 "" H 2375 6181 50  0001 C CNN
 F 3 "" H 2375 6181 50  0001 C CNN
@@ -465,11 +465,11 @@ Connection ~ 1375 4923
 Wire Wire Line
 	1375 4923 1376 4923
 $Comp
-L estop-rescue:ROX5SSJ1K8-USBhUB 10Kr4
+L estop-rescue:ROX5SSJ1K8-USBhUB r12
 U 1 1 5E491355
 P 2375 6081
-F 0 "10Kr4" V 2679 6169 50  0000 L CNN
-F 1 "ROX5SSJ1K8" V 2770 6169 50  0001 L CNN
+F 0 "r12" V 2679 6169 50  0000 L CNN
+F 1 "10k" V 2770 6169 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 2925 6131 50  0001 L CNN
 F 3 "https://componentsearchengine.com/Datasheets/1/ROX5SSJ1K8.pdf" H 2925 6031 50  0001 L CNN
 F 4 "TE Connectivity 1.8k 5W Metal Oxide Resistor +/-5% +/-350ppm/C ROX5SSJ1K8" H 2925 5931 50  0001 L CNN "Description"
@@ -495,10 +495,10 @@ Wire Wire Line
 Wire Wire Line
 	2375 4458 2375 4722
 $Comp
-L Transistor_FET:IRF9540N Q2
+L Transistor_FET:IRF9540N Q4
 U 1 1 5E491362
 P 2275 4922
-F 0 "Q2" H 2479 4876 50  0000 L CNN
+F 0 "Q4" H 2479 4876 50  0000 L CNN
 F 1 "IRF9530N" H 2479 4967 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 2475 4847 50  0001 L CIN
 F 3 "http://www.vishay.com/docs/91076/sihf9530.pdf" H 2275 4922 50  0001 L CNN
@@ -525,11 +525,11 @@ Wire Wire Line
 	2075 4923 2074 4923
 Connection ~ 2075 4923
 $Comp
-L estop-rescue:ROX5SSJ1K8-USBhUB 10Kr2
+L estop-rescue:ROX5SSJ1K8-USBhUB r9
 U 1 1 5E491379
 P 1218 4923
-F 0 "10Kr2" V 1522 5011 50  0000 L CNN
-F 1 "ROX5SSJ1K8" V 1613 5011 50  0001 L CNN
+F 0 "r9" V 1522 5011 50  0000 L CNN
+F 1 "10k" V 1613 5011 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 1768 4973 50  0001 L CNN
 F 3 "https://componentsearchengine.com/Datasheets/1/ROX5SSJ1K8.pdf" H 1768 4873 50  0001 L CNN
 F 4 "TE Connectivity 1.8k 5W Metal Oxide Resistor +/-5% +/-350ppm/C ROX5SSJ1K8" H 1768 4773 50  0001 L CNN "Description"
@@ -549,10 +549,10 @@ Wire Wire Line
 Text GLabel 3770 4913 0    50   Input ~ 0
 Input4
 $Comp
-L power:VCC #PWR04
+L power:VCC #PWR03
 U 1 1 5E492F6C
 P 4006 5614
-F 0 "#PWR04" H 4006 5464 50  0001 C CNN
+F 0 "#PWR03" H 4006 5464 50  0001 C CNN
 F 1 "VCC" H 4024 5787 50  0000 C CNN
 F 2 "" H 4006 5614 50  0001 C CNN
 F 3 "" H 4006 5614 50  0001 C CNN
@@ -564,11 +564,11 @@ Wire Wire Line
 Wire Wire Line
 	3884 4901 3884 4913
 $Comp
-L estop-rescue:ROX5SSJ1K8-USBhUB 1Kr4
+L estop-rescue:ROX5SSJ1K8-USBhUB r8
 U 1 1 5E492F7A
 P 4163 4914
-F 0 "1Kr4" V 4467 5002 50  0000 L CNN
-F 1 "ROX5SSJ1K8" V 4558 5002 50  0001 L CNN
+F 0 "r8" V 4467 5002 50  0000 L CNN
+F 1 "1k" V 4558 5002 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 4713 4964 50  0001 L CNN
 F 3 "https://componentsearchengine.com/Datasheets/1/ROX5SSJ1K8.pdf" H 4713 4864 50  0001 L CNN
 F 4 "TE Connectivity 1.8k 5W Metal Oxide Resistor +/-5% +/-350ppm/C ROX5SSJ1K8" H 4713 4764 50  0001 L CNN "Description"
@@ -595,11 +595,11 @@ Connection ~ 4163 4914
 Wire Wire Line
 	4163 4914 4164 4914
 $Comp
-L estop-rescue:ROX5SSJ1K8-USBhUB 10Kr8
+L estop-rescue:ROX5SSJ1K8-USBhUB r11
 U 1 1 5E492F8E
 P 5163 6072
-F 0 "10Kr8" V 5467 6160 50  0000 L CNN
-F 1 "ROX5SSJ1K8" V 5558 6160 50  0001 L CNN
+F 0 "r11" V 5467 6160 50  0000 L CNN
+F 1 "10k" V 5558 6160 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 5713 6122 50  0001 L CNN
 F 3 "https://componentsearchengine.com/Datasheets/1/ROX5SSJ1K8.pdf" H 5713 6022 50  0001 L CNN
 F 4 "TE Connectivity 1.8k 5W Metal Oxide Resistor +/-5% +/-350ppm/C ROX5SSJ1K8" H 5713 5922 50  0001 L CNN "Description"
@@ -625,10 +625,10 @@ Wire Wire Line
 Wire Wire Line
 	5163 4449 5163 4713
 $Comp
-L Transistor_FET:IRF9540N Q4
+L Transistor_FET:IRF9540N Q3
 U 1 1 5E492F9B
 P 5063 4913
-F 0 "Q4" H 5267 4867 50  0000 L CNN
+F 0 "Q3" H 5267 4867 50  0000 L CNN
 F 1 "IRF9530N" H 5267 4958 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 5263 4838 50  0001 L CIN
 F 3 "http://www.vishay.com/docs/91076/sihf9530.pdf" H 5063 4913 50  0001 L CNN
@@ -655,11 +655,11 @@ Wire Wire Line
 	4863 4914 4862 4914
 Connection ~ 4863 4914
 $Comp
-L estop-rescue:ROX5SSJ1K8-USBhUB 10Kr6
+L estop-rescue:ROX5SSJ1K8-USBhUB r7
 U 1 1 5E492FB2
 P 4006 4914
-F 0 "10Kr6" V 4310 5002 50  0000 L CNN
-F 1 "ROX5SSJ1K8" V 4401 5002 50  0001 L CNN
+F 0 "r7" V 4310 5002 50  0000 L CNN
+F 1 "10k" V 4401 5002 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 4556 4964 50  0001 L CNN
 F 3 "https://componentsearchengine.com/Datasheets/1/ROX5SSJ1K8.pdf" H 4556 4864 50  0001 L CNN
 F 4 "TE Connectivity 1.8k 5W Metal Oxide Resistor +/-5% +/-350ppm/C ROX5SSJ1K8" H 4556 4764 50  0001 L CNN "Description"
