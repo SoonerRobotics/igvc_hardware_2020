@@ -5,9 +5,9 @@ The direction of the motor is controlled with using two pins. Enable will overri
 The schematic has enough outputs for two motors.
 
 ## Components
-4x [irf530n mosfets](https://www.mouser.com/ProductDetail/Infineon-Technologies/IRF530NPBF?qs=sGAEpiMZZMvsw8vHdI9FuuyVnNvMCBqh)
+4x [irf9530n mosfets](http://www.vishay.com/docs/91076/sihf9530.pdf)
 
-12x 10k resistors
+8x 10k resistors
 
 4x 1k resistors
 
@@ -26,3 +26,4 @@ The schematic has enough outputs for two motors.
 
 ## Errata
 * revision 1's PCBs had the incorrect footprint for the jst connectors and the drain and source of the mosfets were switched.
+* revision 2 had the wrong mosfet type. Intended mosfet is p-channel instead of n-channel. Updated schematic to reflect the switch to p-channel.
