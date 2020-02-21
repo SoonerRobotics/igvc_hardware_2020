@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:MotorPowerControl-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -15,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L LibraryLoader:IPP120P04P4L03AKSA1 PMOS1
+L MotorPowerControl-rescue:IPP120P04P4L03AKSA1-LibraryLoader PMOS1
 U 1 1 5D9583CA
 P 5050 2350
 AR Path="/5D9583CA" Ref="PMOS1"  Part="1" 
@@ -35,7 +34,7 @@ F 9 "IPP120P04P4L03AKSA1" H 5500 1600 50  0001 L CNN "Manufacturer_Part_Number"
 	1    0    0    1   
 $EndComp
 $Comp
-L LibraryLoader:178.6164.0002 J6
+L MotorPowerControl-rescue:178.6164.0002-LibraryLoader J6
 U 1 1 5D9583D7
 P 6450 3900
 AR Path="/5D9583D7" Ref="J6"  Part="1" 
@@ -55,7 +54,7 @@ F 9 "178.6164.0002" H 7100 3300 50  0001 L CNN "Manufacturer_Part_Number"
 	0    1    1    0   
 $EndComp
 $Comp
-L LibraryLoader:178.6164.0002 J5
+L MotorPowerControl-rescue:178.6164.0002-LibraryLoader J5
 U 1 1 5D9583E3
 P 5800 3900
 AR Path="/5D9583E3" Ref="J5"  Part="1" 
@@ -75,7 +74,7 @@ F 9 "178.6164.0002" H 6450 3300 50  0001 L CNN "Manufacturer_Part_Number"
 	0    1    1    0   
 $EndComp
 $Comp
-L LibraryLoader:178.6164.0002 J4
+L MotorPowerControl-rescue:178.6164.0002-LibraryLoader J4
 U 1 1 5D9583EF
 P 4800 3900
 AR Path="/5D9583EF" Ref="J4"  Part="1" 
@@ -95,7 +94,7 @@ F 9 "178.6164.0002" H 5450 3300 50  0001 L CNN "Manufacturer_Part_Number"
 	0    1    1    0   
 $EndComp
 $Comp
-L LibraryLoader:178.6164.0002 J2
+L MotorPowerControl-rescue:178.6164.0002-LibraryLoader J2
 U 1 1 5D9583FB
 P 4150 3900
 AR Path="/5D9583FB" Ref="J2"  Part="1" 
@@ -227,7 +226,7 @@ F 3 "" H 3650 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LibraryLoader:HSE-B20250-040H H1
+L MotorPowerControl-rescue:HSE-B20250-040H-LibraryLoader H1
 U 1 1 5D9636D1
 P 8850 2450
 F 0 "H1" H 9250 2715 50  0000 C CNN
@@ -321,4 +320,10 @@ Wire Wire Line
 Connection ~ 5350 3600
 Wire Wire Line
 	5350 3600 5800 3600
+Text Notes 8710 2720 0    50   ~ 0
+This is a heatsink for cooling the PMOS
+Text Notes 5440 1800 0    50   ~ 0
+Pull-up resistor to cut power if\nenable is disconnected
+Text Notes 3160 1570 0    50   ~ 0
+VCC\nENB\nGND
 $EndSCHEMATC

@@ -1,4 +1,4 @@
-17637969807167697
+17644291398865697
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -68620,6 +68620,34 @@ LM2596
 0
 4
 4
+SCR_KiCAD_Lib
+TO254P440X1000X2110-3P
+IPP120P04P4L03AKSA1
+MOSFET (P-Channel)
+0
+3
+3
+SCR_KiCAD_Lib
+crab-image
+
+
+0
+0
+0
+SCR_KiCAD_Lib
+oklahoma-image
+
+
+0
+0
+0
+SCR_KiCAD_Lib
+robot-image
+
+
+0
+0
+0
 SCR_KiCAD_Lib
 scr-logo
 
