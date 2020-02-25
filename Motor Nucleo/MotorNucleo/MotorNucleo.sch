@@ -4,10 +4,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
+Title "Motor Nucleo"
 Date ""
-Rev ""
-Comp ""
+Rev "2"
+Comp "Tyler Julian - Sooner Competitive Robotics"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -24,7 +24,7 @@ Nucleo
 Wire Notes Line
 	4000 4700 4850 4700
 Text Notes 1170 1810 0    50   ~ 0
-The speed of the motor controller is controlled using PWM and the direction of the motor is controlled using the enable pins A and B. \n\nThe Nucleo outputs 3 volts and the input is 3 volts, but the encoder uses 5 volt logic. A level shifter is used to convert 5 volts down to 3 volts. \n\nEach side of the robot has two motors connected together to provide more torque. The motors share a PWM signal and enable pins on their respective sides.
+The speed of the motor controller is controlled using PWM and the direction of the motor is controlled using the enable pins A and B. \n\nEach side of the robot has two motors connected together to provide more torque. The motors share a PWM signal and enable pins on their respective sides.
 Text Notes 4450 4690 0    50   ~ 0
 D13
 Text Notes 4470 3290 0    50   ~ 0
@@ -296,10 +296,6 @@ Wire Wire Line
 	2460 4550 2150 4550
 Wire Wire Line
 	6150 4150 6150 4050
-Wire Wire Line
-	6150 4400 5600 4400
-Wire Wire Line
-	6150 4500 6150 4400
 $Comp
 L Connector:Screw_Terminal_01x02 J6
 U 1 1 5E326B4B
@@ -336,25 +332,25 @@ Wire Wire Line
 $Comp
 L Connector:Screw_Terminal_01x03 J2
 U 1 1 5E2FB534
-P 6450 4500
-F 0 "J2" H 6530 4496 50  0001 L CNN
-F 1 "Screw_Terminal_01x03" H 6530 4451 50  0001 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 6450 4500 50  0001 C CNN
-F 3 "~" H 6450 4500 50  0001 C CNN
-	1    6450 4500
+P 6460 4570
+F 0 "J2" H 6540 4566 50  0001 L CNN
+F 1 "Screw_Terminal_01x03" H 6540 4521 50  0001 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 6460 4570 50  0001 C CNN
+F 3 "~" H 6460 4570 50  0001 C CNN
+	1    6460 4570
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6250 4400 6150 4400
-Text Notes 6230 4390 2    50   ~ 10
+	6260 4470 6160 4470
+Text Notes 6240 4460 2    50   ~ 10
 Left Pwm
 Wire Wire Line
-	6250 4500 6150 4500
-Text Notes 7200 4450 2    50   ~ 10
+	6260 4570 6160 4570
+Text Notes 7210 4520 2    50   ~ 10
 Left Motor 1 PWM
-Text Notes 7200 4550 2    50   ~ 10
+Text Notes 7210 4620 2    50   ~ 10
 Left motor 2 PWM
-Text Notes 6700 4650 2    50   ~ 10
+Text Notes 6710 4720 2    50   ~ 10
 GND
 $Comp
 L Connector:Screw_Terminal_01x03 J1
@@ -382,34 +378,38 @@ L power:GND #PWR?
 U 1 1 5E6306FC
 P 6250 4250
 F 0 "#PWR?" H 6250 4000 50  0001 C CNN
-F 1 "GND" V 6255 4122 50  0000 R CNN
+F 1 "GND" H 6255 4122 50  0000 L BNN
 F 2 "" H 6250 4250 50  0001 C CNN
 F 3 "" H 6250 4250 50  0001 C CNN
 	1    6250 4250
-	0    1    -1   0   
+	-1   0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5E6352AC
-P 6250 4600
-F 0 "#PWR?" H 6250 4350 50  0001 C CNN
-F 1 "GND" V 6255 4472 50  0000 R CNN
-F 2 "" H 6250 4600 50  0001 C CNN
-F 3 "" H 6250 4600 50  0001 C CNN
-	1    6250 4600
-	0    1    -1   0   
+P 6260 4670
+F 0 "#PWR?" H 6260 4420 50  0001 C CNN
+F 1 "GND" V 6265 4542 50  0000 R CNN
+F 2 "" H 6260 4670 50  0001 C CNN
+F 3 "" H 6260 4670 50  0001 C CNN
+	1    6260 4670
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	4800 4150 6150 4150
 Connection ~ 6150 4150
 Wire Wire Line
 	6150 4150 6250 4150
-Connection ~ 6150 4400
-Wire Wire Line
-	5600 4400 5600 4250
 Connection ~ 5010 3250
 Wire Wire Line
 	5010 3250 5140 3250
 Text Notes 5600 3230 0    50   ~ 0
 Vin is supplied using a buck converter that converts 12V to 5V
+Wire Wire Line
+	6160 4570 6160 4470
+Wire Wire Line
+	6160 4470 5600 4470
+Wire Wire Line
+	5600 4250 5600 4470
+Connection ~ 6160 4470
 $EndSCHEMATC

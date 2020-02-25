@@ -27,5 +27,5 @@ Vin is supplied using a buck converter that converts 12V to 5V
 - KiCAD - Used to create schematics and pcbs. 
 
 ## Errata
-* revision 1's A level shifter was not needed due to the GP I/O pins being 5 volt tolerant.
+* revision 1 A level shifter was not needed due to the GP I/O pins being 5 volt tolerant. The schematic was also needlessly complicated and hard to read.
 
