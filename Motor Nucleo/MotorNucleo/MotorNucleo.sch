@@ -104,7 +104,7 @@ U 1 1 5E316979
 P 8430 4210
 F 0 "J4" H 8348 4435 50  0000 C CNN
 F 1 "Screw_Terminal_01x03" H 8510 4161 50  0001 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 8430 4210 50  0001 C CNN
+F 2 "Connector_JST:JST_EH_B3B-EH-A_1x03_P2.50mm_Vertical" H 8430 4210 50  0001 C CNN
 F 3 "~" H 8430 4210 50  0001 C CNN
 	1    8430 4210
 	-1   0    0    -1  
@@ -119,7 +119,7 @@ U 1 1 5E2FB534
 P 8430 4710
 F 0 "J7" H 8465 4942 50  0000 C CNN
 F 1 "Screw_Terminal_01x03" H 8510 4661 50  0001 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 8430 4710 50  0001 C CNN
+F 2 "Connector_JST:JST_EH_B3B-EH-A_1x03_P2.50mm_Vertical" H 8430 4710 50  0001 C CNN
 F 3 "~" H 8430 4710 50  0001 C CNN
 	1    8430 4710
 	-1   0    0    -1  
@@ -138,7 +138,7 @@ U 1 1 5E2C1330
 P 4430 4660
 F 0 "J5" H 4331 4843 50  0000 L CNN
 F 1 "Screw_Terminal_01x04" H 4510 4561 50  0001 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 4430 4660 50  0001 C CNN
+F 2 "Connector_JST:JST_EH_B4B-EH-A_1x04_P2.50mm_Vertical" H 4430 4660 50  0001 C CNN
 F 3 "~" H 4430 4660 50  0001 C CNN
 	1    4430 4660
 	1    0    0    -1  
@@ -196,7 +196,7 @@ U 1 1 5E2E9504
 P 5220 4060
 F 0 "J3" H 5138 4285 50  0000 C CNN
 F 1 "Screw_Terminal_01x04" H 5300 3961 50  0001 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 5220 4060 50  0001 C CNN
+F 2 "Connector_JST:JST_EH_B4B-EH-A_1x04_P2.50mm_Vertical" H 5220 4060 50  0001 C CNN
 F 3 "~" H 5220 4060 50  0001 C CNN
 	1    5220 4060
 	1    0    0    -1  
@@ -209,7 +209,7 @@ U 1 1 5E2D8CFA
 P 4260 4050
 F 0 "J2" H 4178 4275 50  0000 R BNN
 F 1 "Screw_Terminal_01x04" H 4340 3951 50  0001 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 4260 4050 50  0001 C CNN
+F 2 "Connector_JST:JST_EH_B4B-EH-A_1x04_P2.50mm_Vertical" H 4260 4050 50  0001 C CNN
 F 3 "~" H 4260 4050 50  0001 C CNN
 	1    4260 4050
 	1    0    0    -1  
@@ -280,7 +280,7 @@ U 1 1 5E326B4B
 P 3660 3440
 F 0 "J1" H 3578 3252 50  0000 R CNN
 F 1 "Screw_Terminal_01x02" H 3740 3341 50  0001 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 3660 3440 50  0001 C CNN
+F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 3660 3440 50  0001 C CNN
 F 3 "~" H 3660 3440 50  0001 C CNN
 	1    3660 3440
 	-1   0    0    1   
@@ -300,9 +300,20 @@ U 1 1 5E2C7058
 P 5560 4690
 F 0 "J6" H 5512 4921 50  0000 L TNN
 F 1 "Screw_Terminal_01x04" H 5640 4591 50  0001 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 5560 4690 50  0001 C CNN
+F 2 "Connector_JST:JST_EH_B4B-EH-A_1x04_P2.50mm_Vertical" H 5560 4690 50  0001 C CNN
 F 3 "~" H 5560 4690 50  0001 C CNN
 	1    5560 4690
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E594C27
+P 7300 5220
+F 0 "#PWR?" H 7300 4970 50  0001 C CNN
+F 1 "GND" H 7305 5092 50  0001 R BNN
+F 2 "" H 7300 5220 50  0001 C CNN
+F 3 "" H 7300 5220 50  0001 C CNN
+	1    7300 5220
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
