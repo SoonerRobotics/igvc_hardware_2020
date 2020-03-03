@@ -1,126 +1,226 @@
 EESchema Schematic File Version 4
 EELAYER 30 0
 EELAYER END
-$Descr A4 11693 8268
+$Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "E-Stop Remote"
+Date "2020-03-02"
+Rev "1"
+Comp "Noah Zemlin, Sooner Competitive Robotics"
 Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+Text Notes 3650 2050 0    50   ~ 0
+5V was chosen as it was required for the 5110\nbut also works with the Feather M0 using its\ninternal 3v3 regulator.
+Text Notes 3550 3350 0    50   ~ 0
+Note: SIG_STOP is active low and uses\nthe Feather M0's internal pullup resistor.
+Text Notes 1000 1400 0    50   ~ 0
+This PCB will be used for the remote e-stop system in two places.\n\n1. This PCB interfaces a sender Feather M0 with the button and the Adafruit Nokia 5110 breakout board.\n\n2. This PCB interfaces a receiver Feather M0 with the kill signal which will signal the e-stop PCB to kill the motor signals.
 $Comp
-L SCR_KiCAD_Lib:AdafruitFeatherM0LoRa U1
-U 1 1 5E545E80
-P 5700 3600
-F 0 "U1" H 5700 4515 50  0000 C CNN
-F 1 "AdafruitFeatherM0LoRa" H 5700 4424 50  0000 C CNN
-F 2 "SCR_KiCAD_Lib:AdafruitFeatherM0LoRa" H 5700 3600 50  0001 C CNN
-F 3 "" H 5700 3600 50  0001 C CNN
-	1    5700 3600
+L Switch:SW_Push SW1
+U 1 1 5E62E745
+P 3250 3450
+F 0 "SW1" H 3250 3735 50  0000 C CNN
+F 1 "Stop Button" H 3250 3644 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H5mm" H 3250 3650 50  0001 C CNN
+F 3 "~" H 3250 3650 50  0001 C CNN
+	1    3250 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 3450 3650 3500
+$Comp
+L power:GND #PWR0108
+U 1 1 5E62D569
+P 3650 3500
+F 0 "#PWR0108" H 3650 3250 50  0001 C CNN
+F 1 "GND" H 3655 3327 50  0000 C CNN
+F 2 "" H 3650 3500 50  0001 C CNN
+F 3 "" H 3650 3500 50  0001 C CNN
+	1    3650 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 3450 3050 3450
+Text GLabel 1850 3600 2    50   Output ~ 0
+DSPL_DIN
+Text GLabel 2950 3450 0    50   Output ~ 0
+SIG_STOP
+Wire Wire Line
+	3650 3450 3450 3450
+Text GLabel 3050 2550 0    50   Output ~ 0
+SIG_KILL
+Wire Wire Line
+	2550 4000 2550 4500
+Wire Wire Line
+	3100 4000 2550 4000
+Wire Wire Line
+	3000 4100 3100 4100
+$Comp
+L power:+5V #PWR0107
+U 1 1 5E61A2B4
+P 3000 4100
+F 0 "#PWR0107" H 3000 3950 50  0001 C CNN
+F 1 "+5V" V 3015 4228 50  0000 L CNN
+F 2 "" H 3000 4100 50  0001 C CNN
+F 3 "" H 3000 4100 50  0001 C CNN
+	1    3000 4100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR0106
+U 1 1 5E619EAB
+P 1900 2750
+F 0 "#PWR0106" H 1900 2600 50  0001 C CNN
+F 1 "+5V" H 1915 2923 50  0000 C CNN
+F 2 "" H 1900 2750 50  0001 C CNN
+F 3 "" H 1900 2750 50  0001 C CNN
+	1    1900 2750
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x02_Male J1
-U 1 1 5E54ACEB
-P 6800 3850
-F 0 "J1" H 6772 3732 50  0000 R CNN
-F 1 "Enable Out" H 6772 3823 50  0000 R CNN
-F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 6800 3850 50  0001 C CNN
-F 3 "~" H 6800 3850 50  0001 C CNN
-	1    6800 3850
-	-1   0    0    1   
+L power:+5V #PWR0104
+U 1 1 5E6187D4
+P 3000 1850
+F 0 "#PWR0104" H 3000 1700 50  0001 C CNN
+F 1 "+5V" H 3015 2023 50  0000 C CNN
+F 2 "" H 3000 1850 50  0001 C CNN
+F 3 "" H 3000 1850 50  0001 C CNN
+	1    3000 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 5E5DE82E
+P 3250 2650
+F 0 "J2" H 3330 2642 50  0000 L CNN
+F 1 "Kill Signal" H 3330 2551 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 3250 2650 50  0001 C CNN
+F 3 "~" H 3250 2650 50  0001 C CNN
+	1    3250 2650
+	1    0    0    1   
+$EndComp
+Text GLabel 1850 3500 2    50   Input ~ 0
+SIG_STOP
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 5E5DDB02
+P 3250 2000
+F 0 "J1" H 3330 1992 50  0000 L CNN
+F 1 "Power" H 3330 1901 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 3250 2000 50  0001 C CNN
+F 3 "~" H 3250 2000 50  0001 C CNN
+	1    3250 2000
+	1    0    0    1   
+$EndComp
+$Comp
+L SCR_KiCAD_Lib:Nokia5110LED U2
+U 1 1 5E605A76
+P 3200 4150
+F 0 "U2" H 2922 4001 50  0000 R CNN
+F 1 "Nokia5110LED" H 2922 3910 50  0000 R CNN
+F 2 "SCR_KiCAD_Lib:AdafruitNokia5110" H 3200 4150 50  0001 C CNN
+F 3 "" H 3200 4150 50  0001 C CNN
+	1    3200 4150
+	-1   0    0    -1  
+$EndComp
+Connection ~ 2550 4500
+Wire Wire Line
+	2550 4500 2550 4550
+$Comp
+L power:GND #PWR0103
+U 1 1 5E5F2AF2
+P 2550 4550
+F 0 "#PWR0103" H 2550 4300 50  0001 C CNN
+F 1 "GND" H 2555 4377 50  0000 C CNN
+F 2 "" H 2550 4550 50  0001 C CNN
+F 3 "" H 2550 4550 50  0001 C CNN
+	1    2550 4550
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6100 3750 6600 3750
+	3100 4500 2550 4500
+Text GLabel 3100 4200 0    50   Input ~ 0
+DSPL_SCLK
+Text GLabel 3100 4300 0    50   Input ~ 0
+DSPL_DIN
+Text GLabel 3100 4400 0    50   Input ~ 0
+DSPL_DC
+Text GLabel 3100 4600 0    50   Input ~ 0
+DSPL_RST
+Text GLabel 1850 3200 2    50   Output ~ 0
+DSPL_RST
+Text GLabel 1850 3400 2    50   Output ~ 0
+DSPL_DC
+Text GLabel 1850 3700 2    50   Output ~ 0
+DSPL_SCLK
+Text GLabel 1850 3100 2    50   Input ~ 0
+SIG_KILL
+Wire Wire Line
+	3050 2650 3000 2650
+Wire Wire Line
+	3000 2650 3000 2700
 $Comp
 L power:GND #PWR0101
 U 1 1 5E54CD25
-P 6550 3900
-F 0 "#PWR0101" H 6550 3650 50  0001 C CNN
-F 1 "GND" H 6555 3727 50  0000 C CNN
-F 2 "" H 6550 3900 50  0001 C CNN
-F 3 "" H 6550 3900 50  0001 C CNN
-	1    6550 3900
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0102
-U 1 1 5E54D42E
-P 5150 3300
-F 0 "#PWR0102" H 5150 3050 50  0001 C CNN
-F 1 "GND" H 5155 3127 50  0000 C CNN
-F 2 "" H 5150 3300 50  0001 C CNN
-F 3 "" H 5150 3300 50  0001 C CNN
-	1    5150 3300
+P 3000 2700
+F 0 "#PWR0101" H 3000 2450 50  0001 C CNN
+F 1 "GND" H 3005 2527 50  0000 C CNN
+F 2 "" H 3000 2700 50  0001 C CNN
+F 3 "" H 3000 2700 50  0001 C CNN
+	1    3000 2700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5300 3250 5150 3250
+	3050 1900 3000 1900
 Wire Wire Line
-	5150 3250 5150 3300
-Wire Wire Line
-	6600 3850 6550 3850
-Wire Wire Line
-	6550 3850 6550 3900
-$Comp
-L Connector:Conn_01x02_Male J2
-U 1 1 5E54F0F6
-P 7000 3050
-F 0 "J2" H 6972 2932 50  0000 R CNN
-F 1 "Power" H 6972 3023 50  0000 R CNN
-F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 7000 3050 50  0001 C CNN
-F 3 "~" H 7000 3050 50  0001 C CNN
-	1    7000 3050
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:VCC #PWR0103
-U 1 1 5E55111F
-P 6150 3300
-F 0 "#PWR0103" H 6150 3150 50  0001 C CNN
-F 1 "VCC" H 6167 3473 50  0000 C CNN
-F 2 "" H 6150 3300 50  0001 C CNN
-F 3 "" H 6150 3300 50  0001 C CNN
-	1    6150 3300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6150 3300 6150 3350
-Wire Wire Line
-	6150 3350 6100 3350
-$Comp
-L power:VCC #PWR0104
-U 1 1 5E552FCE
-P 6750 2900
-F 0 "#PWR0104" H 6750 2750 50  0001 C CNN
-F 1 "VCC" H 6767 3073 50  0000 C CNN
-F 2 "" H 6750 2900 50  0001 C CNN
-F 3 "" H 6750 2900 50  0001 C CNN
-	1    6750 2900
-	1    0    0    -1  
-$EndComp
+	3050 2000 3000 2000
 $Comp
 L power:GND #PWR0105
 U 1 1 5E5534DE
-P 6750 3100
-F 0 "#PWR0105" H 6750 2850 50  0001 C CNN
-F 1 "GND" H 6755 2927 50  0000 C CNN
-F 2 "" H 6750 3100 50  0001 C CNN
-F 3 "" H 6750 3100 50  0001 C CNN
-	1    6750 3100
+P 3000 2050
+F 0 "#PWR0105" H 3000 1800 50  0001 C CNN
+F 1 "GND" H 3005 1877 50  0000 C CNN
+F 2 "" H 3000 2050 50  0001 C CNN
+F 3 "" H 3000 2050 50  0001 C CNN
+	1    3000 2050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6800 3050 6750 3050
+	3000 2000 3000 2050
 Wire Wire Line
-	6750 3050 6750 3100
+	3000 1900 3000 1850
 Wire Wire Line
-	6800 2950 6750 2950
+	1900 2800 1850 2800
 Wire Wire Line
-	6750 2950 6750 2900
+	1900 2750 1900 2800
+Wire Wire Line
+	900  2700 900  2750
+Wire Wire Line
+	1050 2700 900  2700
+$Comp
+L power:GND #PWR0102
+U 1 1 5E54D42E
+P 900 2750
+F 0 "#PWR0102" H 900 2500 50  0001 C CNN
+F 1 "GND" H 905 2577 50  0000 C CNN
+F 2 "" H 900 2750 50  0001 C CNN
+F 3 "" H 900 2750 50  0001 C CNN
+	1    900  2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L SCR_KiCAD_Lib:AdafruitFeatherM0LoRa U1
+U 1 1 5E545E80
+P 1450 3050
+F 0 "U1" H 1450 3965 50  0000 C CNN
+F 1 "AdafruitFeatherM0LoRa" H 1450 3874 50  0000 C CNN
+F 2 "SCR_KiCAD_Lib:AdafruitFeatherM0LoRa" H 1450 3050 50  0001 C CNN
+F 3 "" H 1450 3050 50  0001 C CNN
+	1    1450 3050
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
