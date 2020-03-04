@@ -223,4 +223,6 @@ Wire Wire Line
 	2900 4700 3100 4700
 Text Notes 3500 4800 0    50   ~ 0
 Note: VCC is power for the 3V3 logic. LED is power for the backlight which\nis recommend 3V3. The Feather cannot source enough current for the 5110\nso we use a 560 Ohm resistor with the 5V power (from battery)\ninstead of the recommended 3V3 with 330 Ohm resistor.
+Text GLabel 1250 4300 3    50   UnSpc ~ 0
+ANTENNA
 $EndSCHEMATC

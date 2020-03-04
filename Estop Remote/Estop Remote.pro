@@ -1,4 +1,4 @@
-update=2020-03-03 6:07:30 PM
+update=2020-03-04 10:58:06 AM
 version=1
 last_client=kicad
 [general]
@@ -237,7 +237,18 @@ dPairWidth=0.2
 dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/1]
-Name=POWER
+Name=Atenna
+Clearance=0.4
+TrackWidth=1
+ViaDiameter=0.8
+ViaDrill=0.4
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.2
+dPairGap=0.25
+dPairViaGap=0.25
+[pcbnew/Netclasses/2]
+Name=Power
 Clearance=0.4
 TrackWidth=0.5
 ViaDiameter=0.8
