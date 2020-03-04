@@ -13,8 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Notes 3650 2050 0    50   ~ 0
-5V was chosen as it was required for the 5110\nbut also works with the Feather M0 using its\ninternal 3v3 regulator.
 Text Notes 3550 3350 0    50   ~ 0
 Note: SIG_STOP is active low and uses\nthe Feather M0's internal pullup resistor.
 Text Notes 1000 1400 0    50   ~ 0
@@ -60,17 +58,6 @@ Wire Wire Line
 Wire Wire Line
 	3000 4100 3100 4100
 $Comp
-L power:+5V #PWR0107
-U 1 1 5E61A2B4
-P 3000 4100
-F 0 "#PWR0107" H 3000 3950 50  0001 C CNN
-F 1 "+5V" V 3015 4228 50  0000 L CNN
-F 2 "" H 3000 4100 50  0001 C CNN
-F 3 "" H 3000 4100 50  0001 C CNN
-	1    3000 4100
-	0    -1   -1   0   
-$EndComp
-$Comp
 L power:+5V #PWR0106
 U 1 1 5E619EAB
 P 1900 2750
@@ -82,21 +69,10 @@ F 3 "" H 1900 2750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR0104
-U 1 1 5E6187D4
-P 3000 1850
-F 0 "#PWR0104" H 3000 1700 50  0001 C CNN
-F 1 "+5V" H 3015 2023 50  0000 C CNN
-F 2 "" H 3000 1850 50  0001 C CNN
-F 3 "" H 3000 1850 50  0001 C CNN
-	1    3000 1850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J2
+L Connector_Generic:Conn_01x02 J1
 U 1 1 5E5DE82E
 P 3250 2650
-F 0 "J2" H 3330 2642 50  0000 L CNN
+F 0 "J1" H 3330 2642 50  0000 L CNN
 F 1 "Kill Signal" H 3330 2551 50  0000 L CNN
 F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 3250 2650 50  0001 C CNN
 F 3 "~" H 3250 2650 50  0001 C CNN
@@ -105,28 +81,6 @@ F 3 "~" H 3250 2650 50  0001 C CNN
 $EndComp
 Text GLabel 1850 3500 2    50   Input ~ 0
 SIG_STOP
-$Comp
-L Connector_Generic:Conn_01x02 J1
-U 1 1 5E5DDB02
-P 3250 2000
-F 0 "J1" H 3330 1992 50  0000 L CNN
-F 1 "Power" H 3330 1901 50  0000 L CNN
-F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 3250 2000 50  0001 C CNN
-F 3 "~" H 3250 2000 50  0001 C CNN
-	1    3250 2000
-	1    0    0    1   
-$EndComp
-$Comp
-L SCR_KiCAD_Lib:Nokia5110LED U2
-U 1 1 5E605A76
-P 3200 4150
-F 0 "U2" H 2922 4001 50  0000 R CNN
-F 1 "Nokia5110LED" H 2922 3910 50  0000 R CNN
-F 2 "SCR_KiCAD_Lib:AdafruitNokia5110" H 3200 4150 50  0001 C CNN
-F 3 "" H 3200 4150 50  0001 C CNN
-	1    3200 4150
-	-1   0    0    -1  
-$EndComp
 Connection ~ 2550 4500
 Wire Wire Line
 	2550 4500 2550 4550
@@ -175,25 +129,6 @@ F 3 "" H 3000 2700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3050 1900 3000 1900
-Wire Wire Line
-	3050 2000 3000 2000
-$Comp
-L power:GND #PWR0105
-U 1 1 5E5534DE
-P 3000 2050
-F 0 "#PWR0105" H 3000 1800 50  0001 C CNN
-F 1 "GND" H 3005 1877 50  0000 C CNN
-F 2 "" H 3000 2050 50  0001 C CNN
-F 3 "" H 3000 2050 50  0001 C CNN
-	1    3000 2050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3000 2000 3000 2050
-Wire Wire Line
-	3000 1900 3000 1850
-Wire Wire Line
 	1900 2800 1850 2800
 Wire Wire Line
 	1900 2750 1900 2800
@@ -223,4 +158,69 @@ F 3 "" H 1450 3050 50  0001 C CNN
 	1    1450 3050
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:+3.3V #PWR0109
+U 1 1 5E5EFBC2
+P 900 2450
+F 0 "#PWR0109" H 900 2300 50  0001 C CNN
+F 1 "+3.3V" H 915 2623 50  0000 C CNN
+F 2 "" H 900 2450 50  0001 C CNN
+F 3 "" H 900 2450 50  0001 C CNN
+	1    900  2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	900  2450 900  2500
+Wire Wire Line
+	900  2500 1050 2500
+$Comp
+L SCR_KiCAD_Lib:Nokia5110LED U2
+U 1 1 5E605A76
+P 3200 4150
+F 0 "U2" H 2922 4001 50  0000 R CNN
+F 1 "Nokia5110LED" H 2922 3910 50  0000 R CNN
+F 2 "SCR_KiCAD_Lib:AdafruitNokia5110" H 3200 4150 50  0001 C CNN
+F 3 "" H 3200 4150 50  0001 C CNN
+	1    3200 4150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0107
+U 1 1 5E5FAE2A
+P 2750 5000
+F 0 "#PWR0107" H 2750 4850 50  0001 C CNN
+F 1 "+5V" V 2765 5128 50  0000 L CNN
+F 2 "" H 2750 5000 50  0001 C CNN
+F 3 "" H 2750 5000 50  0001 C CNN
+	1    2750 5000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3.3V #PWR0110
+U 1 1 5E5FB1A5
+P 3000 4100
+F 0 "#PWR0110" H 3000 3950 50  0001 C CNN
+F 1 "+3.3V" V 3015 4228 50  0000 L CNN
+F 2 "" H 3000 4100 50  0001 C CNN
+F 3 "" H 3000 4100 50  0001 C CNN
+	1    3000 4100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5E5FBC28
+P 2900 4850
+F 0 "R1" H 2970 4896 50  0000 L CNN
+F 1 "560" H 2970 4805 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2830 4850 50  0001 C CNN
+F 3 "~" H 2900 4850 50  0001 C CNN
+	1    2900 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 5000 2900 5000
+Wire Wire Line
+	2900 4700 3100 4700
+Text Notes 3500 4800 0    50   ~ 0
+Note: VCC is power for the 3V3 logic. LED is power for the backlight which\nis recommend 3V3. The Feather cannot source enough current for the 5110\nso we use a 560 Ohm resistor with the 5V power (from battery)\ninstead of the recommended 3V3 with 330 Ohm resistor.
 $EndSCHEMATC
