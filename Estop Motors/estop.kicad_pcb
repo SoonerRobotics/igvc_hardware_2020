@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 1)
+    (drawings 4)
     (tracks 79)
     (zones 0)
     (modules 28)
@@ -85,9 +85,9 @@
       (subtractmaskfromsilk false)
       (outputformat 1)
       (mirror false)
-      (drillshape 1)
+      (drillshape 0)
       (scaleselection 1)
-      (outputdirectory "./"))
+      (outputdirectory "../../GIB/Estop/"))
   )
 
   (net 0 "")
@@ -2537,6 +2537,15 @@
     )
   )
 
+  (gr_text EN (at 77.47 127) (layer F.SilkS) (tstamp 5E629D72)
+    (effects (font (size 1.5 1.5) (thickness 0.3)))
+  )
+  (gr_text O (at 74.93 127) (layer F.SilkS) (tstamp 5E629D72)
+    (effects (font (size 1.5 1.5) (thickness 0.3)))
+  )
+  (gr_text "G\n" (at 72.39 127) (layer F.SilkS)
+    (effects (font (size 1.5 1.5) (thickness 0.3)))
+  )
   (gr_text "Motor Controller Override\nRev3" (at 118.11 135.89 90) (layer F.SilkS)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
@@ -2621,7 +2630,7 @@
   (segment (start 93.96 128.25) (end 93.98 128.27) (width 0.25) (layer F.Cu) (net 14))
   (segment (start 106.68 130.81) (end 106.68 124.46) (width 0.25) (layer F.Cu) (net 15))
 
-  (zone (net 0) (net_name "") (layer Edge.Cuts) (tstamp 0) (hatch edge 0.508)
+  (zone (net 0) (net_name "") (layer Edge.Cuts) (tstamp 5E62DAED) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
